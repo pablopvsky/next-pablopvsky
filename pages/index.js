@@ -9,9 +9,8 @@ export default class extends React.Component {
     static async getInitialProps({ req, res }) {
         try {
 
-            let slug = 'pablopvsky'
 
-            const page = await Client(req).query(Prismic.Predicates.at('my.paginas.uid', `${slug}`))
+            const page = await Client(req).getSingle('homepage')
 
             return { page, statusCode: 200 }
         } catch (e) {
@@ -30,11 +29,11 @@ export default class extends React.Component {
                     <div className="smash">
                         <div className="pad">
                             <div className="header">
-                                <h1>{RichText.asText(page.results[0].data.subtitle)}</h1>
+                                <h1>{RichText.asText(page.data.subtitle)}</h1>
                             </div>
                             <div className="content h6">
-                                {RichText.asText(page.results[0].data.excerpt)}
-                                {RichText.render(page.results[0].data.content)}
+                                {RichText.asText(page.data.excerpt)}
+                                {RichText.render(page.data.content)}
                                 <span className="typewriter">
                                     <span className="typewriter-text">...</span>
                                 </span>
@@ -42,20 +41,20 @@ export default class extends React.Component {
                                 <h2>Aptitudes</h2>
 
                                 <h3>Arte</h3>
-                                <ul className="smosh mod-detail list">
+                                <ul className=" mod-detail list">
                                     <li>Dibujo</li>
                                     <li>Poesía</li>
                                 </ul>
 
                                 <h3>Publicidad</h3>
-                                <ul className="smosh mod-detail list">
+                                <ul className=" mod-detail list">
                                     <li>Creación de marca</li>
                                     <li>Estrategias de comunicación</li>
                                     <li>Redacción de contenidos publicitarios</li>
                                 </ul>
 
                                 <h3>Web</h3>
-                                <ul className="smosh mod-detail list">
+                                <ul className=" mod-detail list">
                                     <li>UI/UX</li>
                                     <li>Frontend</li>
                                     <li>SEO</li>
