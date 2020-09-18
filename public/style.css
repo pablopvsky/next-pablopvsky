@@ -1,75 +1,23 @@
 @font-face {
-    font-family: 'iAWriterQuattroS';
-    src: url('/fonts/iAWriterQuattroS-Regular.woff2') format('woff2'),
-         url('/fonts/iAWriterQuattroS-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "iAWriterMonoS";
+  src: url("/fonts/iAWriterMonoS-Regular.woff2") format("woff2"),
+    url("/fonts/iAWriterMonoS-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'iAWriterQuattroS';
-    src: url('/fonts/iAWriterQuattroS-Bold.woff2') format('woff2'),
-         url('/fonts/iAWriterQuattroS-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'pablopvsky';
-    src: url('/fonts/Pablopvsky-Regular.woff2') format('woff2'),
-         url('/fonts/Pablopvsky-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-html {
-    font-family: 'iAWriterQuattroS'
+  font-family: "pablopvsky";
+  src: url("/fonts/Pablopvsky-Regular.woff2") format("woff2"),
+    url("/fonts/Pablopvsky-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .pablopvsky {
-    font-family: 'pablopvsky';
-    font-size: 1.25em;
-    margin-top: 30px
+  font-family: "pablopvsky";
 }
 
-.page {
-    padding-top: 60px!important
-}
-
-a {
-    text-decoration: underline
-}
-
-.typewriter {
-	display: inline-block;
-}
-
-.typewriter-text {
-    display: inline-block;
- 	animation: typing 250ms steps(30, end), blink .75s step-end infinite;
-    white-space: nowrap;
-    border-right: 4px solid #8bd7fa;
-    box-sizing: border-box;
-}
-
-@keyframes typing {
-    from { 
-        width: 0% 
-    }
-    to { 
-        width: 100% 
-    }
-}
-
-@keyframes blink {
-    from, to { 
-        border-color: transparent 
-    }
-    50% { 
-        border-color: #8bd7fa; 
-    }
-}
-
-.list {
-    list-style: circle;
+.iAWriterMonoS {
+  font-family: "iAWriterMonoS";
 }

@@ -1,15 +1,15 @@
 {
-    "siteName": "Pablopvsky",
-    "siteDescription": "Pablo Orozco Montes, también conocido como @Pablopvsky, publicista, muy curioso, amante del play 1 y de andar en internet. Desde que descubrió que podía jugar RPG en línea con otras personas, a sus 12 años comenzó sus andanzas.",
-    "siteURL": "https://pablopvsky.com",
-    "apiEndpoint": "https://pablopvsky.cdn.prismic.io/api/v2",
-    "favIcon": "https://images.prismic.io/garitma%2F9770e893-6e3f-4c08-b3b8-5bfbb5f8236b_favicon-192.png?auto=compress,format",
-    "contactEmail": "hola@garitma.com",
-    "lang": "es",
-    "timeZone": "UTC-5",
-    "dateFormat": "LL",
-    "social": {
-        "instagram": "pablopvsky",
-        "openGrap": "https://images.prismic.io/garitma%2F6c1c4bbe-430e-457a-ae2b-fe45ba615466_featured-pablopvsky.jpg?auto=compress,format"
-    }
+  "siteName": "Pablopvsky",
+  "siteDescription": "Pablo Orozco Montes, también conocido como @Pablopvsky, publicista, muy curioso, amante del play 1 y de andar en internet. Desde que descubrió que podía jugar RPG en línea con otras personas, a sus 12 años comenzó sus andanzas.",
+  "siteURL": "https://pablopvsky.com",
+  "apiEndpoint": "https://pablopvsky.cdn.prismic.io/api/v2",
+  "favIcon": "https://images.prismic.io/garitma%2F9770e893-6e3f-4c08-b3b8-5bfbb5f8236b_favicon-192.png?auto=compress,format",
+  "contactEmail": "me@pablopvsky.com",
+  "lang": "es-co",
+  "timeZone": "UTC-5",
+  "dateFormat": "LL",
+  "social": {
+    "instagram": "pablopvsky",
+    "openGrap": "https://images.prismic.io/garitma%2F6c1c4bbe-430e-457a-ae2b-fe45ba615466_featured-pablopvsky.jpg?auto=compress,format"
+  }
 }
