@@ -48,6 +48,7 @@ const HeadContent = () => (
       href="https://auradesignsystem.com/static/style.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.typekit.net/vdw8shd.css" />
     <link href="/style.css" rel="stylesheet" />
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta

@@ -1,8 +1,11 @@
-import App from 'next/app'
-import Router from 'next/router'
+import Router from "next/router";
 
-import * as gtag from '../public/gtag'
+import * as gtag from "public/gtag";
 
-Router.events.on('routeChangeComplete', url => gtag.pageview(url))
+Router.events.on("routeChangeComplete", (url) => gtag.pageview(url));
 
-export default App
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;

@@ -14,10 +14,34 @@
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: futura-pt, sans-serif;
+}
+
 .pablopvsky {
   font-family: "pablopvsky";
 }
 
 .iAWriterMonoS {
   font-family: "iAWriterMonoS";
+}
+
+.futura-pt {
+  font-family: futura-pt;
+}
+
+.dark-mode {
+  --white: #000000;
+  --blue: #4bbdcc;
+  --purple: #974493;
+}
+
+.figure-down {
+  margin-top: 65px;
+  margin-bottom: -10vh;
 }
