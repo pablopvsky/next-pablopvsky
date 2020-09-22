@@ -1,4 +1,6 @@
 import Router from "next/router";
+import "aura-design-system/style.css";
+import "public/style.css";
 
 import * as gtag from "public/gtag";
 

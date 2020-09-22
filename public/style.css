@@ -14,6 +14,20 @@
   font-style: normal;
 }
 
+.glyphsSprite.p {
+  background-image: url(https://images.prismic.io/pablopvsky/bffc722a-2554-478e-8a15-e253e6b71bdf_splite_glyphs.png?auto=compress,format);
+}
+
+.glyphsSprite.p.logo {
+  background-position: 0 0;
+}
+
+.glyphsSprite.p.p-logo {
+  background-position: -48px 0px;
+  width: 150px;
+  height: 41px;
+}
+
 h1,
 h2,
 h3,
@@ -39,9 +53,25 @@ h6 {
   --white: #000000;
   --blue: #4bbdcc;
   --purple: #974493;
+  --base-color: var(--purple);
 }
 
 .figure-down {
   margin-top: 65px;
-  margin-bottom: -10vh;
+  margin-bottom: -8vh;
+}
+
+.blue-text {
+  color: var(--blue);
+}
+
+.purple-text {
+  color: var(--purple);
+}
+
+.bg-circles {
+  background: url(https://images.prismic.io/pablopvsky/4b26254f-b757-41e0-a6a3-a40c22d99b38_background-circle-figure.png?auto=compress,format);
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
 }
