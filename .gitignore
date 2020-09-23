@@ -127,3 +127,5 @@ out/
 
 # Env
 .env.local
+.env.build
+.vercel
