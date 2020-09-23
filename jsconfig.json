@@ -4,7 +4,7 @@
     "paths": {
       "@atoms/*": ["components/atoms/*"],
       "@molecules/*": ["components/molecules/*"],
-      "@organism/*": ["components/organism/*"],
+      "@organisms/*": ["components/organisms/*"],
       "@templates/*": ["components/templates/*"],
       "@pages/*": ["pages/*"],
       "@api/*": ["api/*"],

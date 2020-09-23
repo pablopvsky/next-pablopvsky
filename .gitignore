@@ -124,3 +124,6 @@ package-lock.json
 
 # Next.js static build files
 out/
+
+# Env
+.env.local

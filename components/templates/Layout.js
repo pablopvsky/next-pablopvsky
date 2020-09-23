@@ -1,8 +1,8 @@
 import NProgress from "nprogress";
 import Router from "next/router";
 
-import Navbar from "@organism/Navbar";
-import Footer from "@organism/Footer";
+import Navbar from "@organisms/Navbar";
+import Footer from "@organisms/Footer";
 import SubHeader from "@molecules/SubHeader";
 
 Router.events.on("routeChangeStart", () => {

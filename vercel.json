@@ -1,10 +1,16 @@
 {
-    "version": 2,
-    "name": "Pablopvsky",
-    "builds": [
-        {
-            "src": "next.config.js",
-            "use": "@now/next"
-        }
-    ]
+  "version": 2,
+  "name": "Pablopvsky",
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "build": {
+    "env": {
+      "ACCESS_TOKEN": "@access_token",
+      "SENDGRID_API_KEY": "@sendgrid_api_key"
+    }
+  }
 }
