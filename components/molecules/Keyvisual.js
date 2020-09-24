@@ -5,11 +5,10 @@ const Keyvisual = () => (
         <img src="https://images.prismic.io/pablopvsky/9d60f9b0-b3fc-4332-bc2f-95df7afeb9d4_arrow-down.png?auto=compress,format" />
       </div>
       <div className="smash centertxt">
-        <h3 className="blue-text">Lorem ipsum</h3>
+        <h3 className="blue-text">Es una promesa</h3>
         <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos
-          dolores.
+          Todos estamos expuestos al error, pero son de esos errores los que nos
+          hacen dudar y crecer.
         </p>
       </div>
       <div className="pad">

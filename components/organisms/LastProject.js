@@ -7,9 +7,8 @@ const LastProyect = () => (
       <div className="pad centertxt smash">
         <h3 className="blue-text">Proyectos</h3>
         <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos
-          dolores.
+          Las ideas poco a poco se vuelven reales y hacen parte de lo que te
+          hacen feliz.
         </p>
       </div>
     </div>

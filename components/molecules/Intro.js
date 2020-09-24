@@ -3,11 +3,19 @@ const Intro = () => (
     <section className="pad bg-circles">
       <div className="smesh">
         <div className="centertxt">
-          <div className="pad">
+          <div className="pad smash">
             <h2 className="blue-text">El Mundo no es tan teso</h2>
-            <p className="smash">
-              Todas las cosas están interconectadas entre sí, por lo tanto,
-              podemos eliminar cualquier barrera existente entre cualquier tema.
+            <p>
+              Una breve descripción de mi persona es el compromiso con el
+              bienestar.
+            </p>
+            <p>
+              Vivo para ser feliz y elimino de forma radical cualquier piedra
+              que se me interponga en ese camino a la felicidad.
+            </p>
+            <p>
+              Creo en el conocimiento, en la experiencia, en el respeto, la
+              amistad, el placer de servir en crear y en que todo es posible.{" "}
             </p>
           </div>
           <div className="block-img smosh figure-down floating">

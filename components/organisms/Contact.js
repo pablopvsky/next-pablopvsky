@@ -7,7 +7,7 @@ function Contact() {
     info: { error: false, msg: null },
   });
 
-  const [inputs, setInputs] = useState({
+  const [data, setData] = useState({
     email: "",
     message: "",
   });
@@ -19,7 +19,7 @@ function Contact() {
         submitting: false,
         info: { error: false, msg: msg },
       });
-      setInputs({
+      setData({
         email: "",
         message: "",
       });
@@ -32,7 +32,7 @@ function Contact() {
 
   const handleOnChange = (e) => {
     e.persist();
-    setInputs((prev) => ({
+    setData((prev) => ({
       ...prev,
       [e.target.id]: e.target.value,
     }));
@@ -51,11 +51,12 @@ function Contact() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(inputs),
+      body: JSON.stringify(data),
     });
     const text = await res.text();
     handleResponse(res.status, text);
   };
+
   return (
     <section className="bg-circles">
       <div className="smash">
@@ -63,12 +64,11 @@ function Contact() {
           <h3 className="h1 layer">
             Hagamos <span className="blue-text">algo</span>
             <br />
-            <span className="purple-text">interesante juntos</span>
+            <span className="purple-text">interesante posible</span>
           </h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores.
+            Si necesitas una solución personalizada, una asesoría o simplemente
+            quieres decirme: Hola 👋 .
           </p>
         </div>
         <div className="smosh pad">
@@ -80,14 +80,14 @@ function Contact() {
                 type="email"
                 onChange={handleOnChange}
                 required
-                value={inputs.email}
+                value={data.email}
               />
               <label htmlFor="message">Mensaje</label>
               <textarea
                 id="message"
                 onChange={handleOnChange}
                 required
-                value={inputs.message}
+                value={data.message}
               />
               <button
                 type="submit"
