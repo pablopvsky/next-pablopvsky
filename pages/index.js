@@ -1,3 +1,4 @@
+import GeneralSeo from "@seo/GeneralSeo";
 import Layout from "@templates/Layout";
 import Contact from "@organisms/Contact";
 import LastPost from "@organisms/LastPost";
@@ -8,6 +9,7 @@ import Keyvisual from "@molecules/Keyvisual";
 
 const Home = () => (
   <Layout>
+    <GeneralSeo />
     <HeroBanner />
     <Intro />
     <LastPost />

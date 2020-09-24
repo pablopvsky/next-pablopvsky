@@ -10,14 +10,14 @@ const LastPost = () => (
         </p>
       </div>
       <div className="centertxt">
-        <h3 className="white-text">Últimas publicaciones</h3>
+        {/* <h3 className="white-text">Últimas publicaciones</h3> */}
       </div>
     </div>
     <div className="smesh">
       <div className="aureole three">
-        {[0, 1, 2].map((index) => (
+        {/* {[0, 1, 2].map((index) => (
           <Module />
-        ))}
+        ))} */}
       </div>
     </div>
     {/* <div className="pad smash centertxt">

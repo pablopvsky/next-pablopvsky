@@ -14,15 +14,30 @@ const LastProyect = () => (
     </div>
     <div className="smesh">
       <div className="aureole">
-        <div className="one block-img">
-          <img src="https://images.prismic.io/pablopvsky/985fe68a-6f12-45ee-bbb2-9fedc46b28b9_proyecto.png?auto=compress,format" />
-        </div>
-        <div className="two block-img">
-          <img src="https://images.prismic.io/pablopvsky/3c9d1d11-e327-4ca2-bad6-bd31b99830b5_proyecto3.png?auto=compress,format" />
-        </div>
-        <div className="three block-img">
-          <img src="https://images.prismic.io/pablopvsky/81aad21f-f0e6-4e4f-8806-d053cbdad1ce_proyecto2.png?auto=compress,format" />
-        </div>
+        <a
+          href="https://garitma.com"
+          rel="noopener"
+          target="_blank"
+          className="one block-img zoom"
+        >
+          <img src="https://images.prismic.io/pablopvsky/b4d076cc-86ce-4b59-857a-cba09772c090_proyecto-pablopvsky-garitma.jpg?auto=compress,format" />
+        </a>
+        <a
+          href="https://somosgentedigital.com"
+          rel="noopener"
+          target="_blank"
+          className="two block-img zoom"
+        >
+          <img src="https://images.prismic.io/pablopvsky/6914fbbc-25f3-4d97-87ed-051a8e4feac0_proyecto-pablopvsky-somos-gente-digital.jpg?auto=compress,format" />
+        </a>
+        <a
+          href="https://elgaritmatico.com"
+          rel="noopener"
+          target="_blank"
+          className="three block-img zoom"
+        >
+          <img src="https://images.prismic.io/pablopvsky/a2f4e702-9fb5-4c67-96e8-30ea4ff2d3d4_proyecto-pablopvsky-elgaritmatico.jpg?auto=compress,format" />
+        </a>
       </div>
     </div>
     <div className="smash pad">
