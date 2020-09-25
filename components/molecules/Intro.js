@@ -6,10 +6,6 @@ const Intro = () => (
           <div className="pad smash">
             <h2 className="blue-text">El Mundo no es tan teso</h2>
             <p>
-              Una breve descripción de mi persona es el compromiso con el
-              bienestar.
-            </p>
-            <p>
               Vivo para ser feliz y elimino de forma radical cualquier piedra
               que se me interponga en ese camino a la felicidad.
             </p>

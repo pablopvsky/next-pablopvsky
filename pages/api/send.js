@@ -1,28 +1,37 @@
+const fs = require("fs");
 const sgMail = require("@sendgrid/mail");
+
+const template = fs.readFileSync("lib/emails/email.html", {
+  encoding: "utf-8",
+});
+const emailHeader = fs.readFileSync("lib/emails/email-header.html", {
+  encoding: "utf-8",
+});
 
 export default async function (req, res) {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   const { email, message } = req.body;
 
+  const MENSSAGE_TAG = "%MENSSAGE%";
+  const HEADER_TAG = "%HEADER%";
+
+  let emailHTML = template;
+  emailHTML = emailHTML.replace(MENSSAGE_TAG, message);
+  emailHTML = emailHTML.replace(HEADER_TAG, emailHeader);
+
   const mailConfig = {
     to: "me@pablopvsky.com",
     from: "Pablo Orozco Montes <me@pablopvsky.com>",
     subject: `Nuevo formulario de contacto llenado`,
-    text: message,
-    html: `<p>${message}</p>`,
+    html: emailHTML,
   };
 
   const mailConfigSecond = {
     to: email,
     from: "Pablo Orozco Montes <me@pablopvsky.com>",
-    subject: `Gracias por ponerte en contacto conmigo`,
-    text:
-      "Gracias por ponerte en contacto conmigo. Trataré de responderte lo más pronto posible.",
-    html: `<p>Gracias por ponerte en contacto conmigo. Trataré de responderte lo más pronto posible.</p>
-    <p>tu mensaje fue: ${message}</p>
-    <p>Estas recibiendo este mensaje porque me escribiste en pablopvsky.com</p>
-    `,
+    subject: `Gracias por ponerte en contacto conmigo :)`,
+    html: emailHTML,
   };
 
   try {

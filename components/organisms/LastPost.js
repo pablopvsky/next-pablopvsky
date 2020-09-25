@@ -5,7 +5,7 @@ const LastPost = () => (
     <div className="smash">
       <div className="pad centertxt">
         <p className="purple-text">
-          Me gusta hablar acerca de las cosas que me gusta, matemáticas, arte,
+          Me encanta hablar acerca de las cosas que me gusta, matemáticas, arte,
           literatura, filosofía. Pero escribo de cómo se hace posible.
         </p>
       </div>
