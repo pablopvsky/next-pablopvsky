@@ -1,3 +1,5 @@
+import { Button } from "aura-design-system/components/atoms/Button";
+
 import GeneralSeo from "@seo/GeneralSeo";
 import Layout from "@templates/Layout";
 import Contact from "@organisms/Contact";
@@ -9,6 +11,7 @@ import Keyvisual from "@molecules/Keyvisual";
 
 const Home = () => (
   <Layout>
+    <Button status="fill" />
     <GeneralSeo />
     <HeroBanner />
     <Intro />
