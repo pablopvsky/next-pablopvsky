@@ -17,11 +17,14 @@ export default async function (req, res) {
     from: "Pablo Orozco Montes <me@pablopvsky.com>",
     subject: `Gracias por ponerte en contacto conmigo :)`,
     html: `Acuso recibido. Hola 👋. 
-            Que bueno que te hayas puesto en contacto conmigo. 
-            Responderé tan pronto sea posible para que convercemos.
-            Saludos.
-            El mensaje que me enviaste fue:
-            ${message}.
+            <br>
+            Que bueno que te hayas puesto en contacto conmigo. <br>
+            Responderé tan pronto sea posible para que convercemos.<br>
+            Saludos.<br>
+            <br>
+            El mensaje que me enviaste fue:<br>
+            ${message}.<br>
+            <br>
             Este mensaje te llegó porque llenaste el formulario de contacto de
             pablopvsky.com
             `,

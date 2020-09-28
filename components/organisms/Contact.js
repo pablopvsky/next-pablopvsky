@@ -1,60 +1,16 @@
 import React, { useState } from "react";
 
+import { sendContactForm } from "services/contact";
+import { UseInputValue } from "hook/UseInputValue";
+
 function Contact() {
-  const [status, setStatus] = useState({
-    submitted: false,
-    submitting: false,
-    info: { error: false, msg: null },
-  });
+  const email = UseInputValue("");
+  const message = UseInputValue("");
 
-  const [data, setData] = useState({
-    email: "",
-    message: "",
-  });
-
-  const handleResponse = (status, msg) => {
-    if (status === 200) {
-      setStatus({
-        submitted: true,
-        submitting: false,
-        info: { error: false, msg: msg },
-      });
-      setData({
-        email: "",
-        message: "",
-      });
-    } else {
-      setStatus({
-        info: { error: true, msg: msg },
-      });
-    }
-  };
-
-  const handleOnChange = (e) => {
-    e.persist();
-    setData((prev) => ({
-      ...prev,
-      [e.target.id]: e.target.value,
-    }));
-    setStatus({
-      submitted: false,
-      submitting: false,
-      info: { error: false, msg: null },
-    });
-  };
-
-  const handleOnSubmit = async (e) => {
-    e.preventDefault();
-    setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
-    const res = await fetch("/api/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-    const text = await res.text();
-    handleResponse(res.status, text);
+  const handleOnSubmit = async (event) => {
+    event.preventDefault();
+    const data = { email: email.value, message: message.value };
+    const res = await sendContactForm(data);
   };
 
   return (
@@ -74,41 +30,12 @@ function Contact() {
         <div className="smosh pad">
           <div className="inputer">
             <form onSubmit={handleOnSubmit}>
-              <label htmlFor="email">Correo electrónico</label>
-              <input
-                id="email"
-                type="email"
-                onChange={handleOnChange}
-                required
-                value={data.email}
-              />
-              <label htmlFor="message">Mensaje</label>
-              <textarea
-                id="message"
-                onChange={handleOnChange}
-                required
-                value={data.message}
-              />
-              <button
-                type="submit"
-                disabled={status.submitting}
-                className="button-fill fluid halo"
-              >
-                <span className="container">
-                  {!status.submitting
-                    ? !status.submitted
-                      ? "Enviar"
-                      : "Enviado"
-                    : "Enviando..."}
-                </span>
+              <input id="email" type="email" {...email} required />
+              <textarea id="message" {...message} required />
+              <button type="submit" className="button-fill fluid halo">
+                <span className="container">Enviar</span>
               </button>
             </form>
-            {status.info.error && (
-              <div className="error">Error: {status.info.msg}</div>
-            )}
-            {!status.info.error && status.info.msg && (
-              <div className="success">{status.info.msg}</div>
-            )}
           </div>
         </div>
       </div>
