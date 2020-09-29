@@ -7,7 +7,7 @@ function Contact() {
   const email = UseInputValue("");
   const message = UseInputValue("");
   const [status, setStatus] = useState({
-    wait: true,
+    wait: false,
     info: { error: false, msg: null },
   });
 
@@ -53,8 +53,19 @@ function Contact() {
         <div className="smosh pad">
           <div className="inputer">
             <form onSubmit={handleOnSubmit}>
-              <input id="email" type="email" {...email} required />
-              <textarea id="message" {...message} required />
+              <input
+                id="email"
+                type="email"
+                placeholder="Correo electrónico"
+                {...email}
+                required
+              />
+              <textarea
+                id="message"
+                placeholder="Mensaje"
+                {...message}
+                required
+              />
               <button
                 type="submit"
                 className={`button-fill fluid halo ${status.wait && "disable"}`}
