@@ -1,23 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import { sendContactForm } from "services/contact";
 import { UseInputValue } from "hook/UseInputValue";
+import { contactFormSchema } from "lib/validation-schema";
 
 function Contact() {
+  const firstRender = useRef(true);
   const email = UseInputValue("");
   const message = UseInputValue("");
+  const data = { email, message };
+  const values = { email: email.value, message: message.value };
+  const [disabled, setDisabled] = useState(true);
   const [status, setStatus] = useState({
     wait: false,
     info: { error: false, msg: null },
   });
 
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    setDisabled(contactFormSchema(data));
+  }, [message, email]);
+
   const handleOnSubmit = async (event) => {
     event.preventDefault();
-
     setStatus((prevStatus) => ({ ...prevStatus, wait: true }));
-    const data = { email: email.value, message: message.value };
-    const res = await sendContactForm(data);
+
+    const res = await sendContactForm(values);
     const text = await res.text();
+
     handleResponse(res, text);
   };
 
@@ -60,6 +73,7 @@ function Contact() {
                 {...email}
                 required
               />
+              {email.error && email.error}
               <textarea
                 id="message"
                 placeholder="Mensaje"
@@ -68,8 +82,8 @@ function Contact() {
               />
               <button
                 type="submit"
-                className={`button-fill fluid halo ${status.wait && "disable"}`}
-                disabled={status.wait}
+                className={`button-fill fluid halo ${disabled && "disable"}`}
+                disabled={disabled}
               >
                 <span className="container">
                   {!status.wait ? "Enviar" : "Enviando..."}
