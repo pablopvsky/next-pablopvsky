@@ -7,8 +7,8 @@ const LastProyect = () => (
       <div className="pad centertxt smash">
         <h3 className="blue-text">Proyectos</h3>
         <p>
-          Las ideas poco a poco se vuelven reales y hacen parte de lo que te
-          hacen feliz.
+          Mis ideales con el paso del tiempo se convierten en una realidad, y la
+          materialización de éstas conforma parte de lo que te hace feliz.
         </p>
       </div>
     </div>
