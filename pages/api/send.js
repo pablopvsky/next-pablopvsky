@@ -5,14 +5,14 @@ export default async function (req, res) {
 
   const { email, message } = req.body;
 
-  const mailConfig = {
+  const sendContactFormConfig = {
     to: "me@pablopvsky.com",
     from: "Pablo Orozco Montes <me@pablopvsky.com>",
     subject: `Nuevo formulario de contacto llenado`,
     html: `El mensaje fue: ${message}. Por: ${email} `,
   };
 
-  const mailConfigSecond = {
+  const sendResponseContactFormCofig = {
     to: email,
     from: "Pablo Orozco Montes <me@pablopvsky.com>",
     subject: `Gracias por ponerte en contacto conmigo :)`,
@@ -31,8 +31,8 @@ export default async function (req, res) {
   };
 
   try {
-    await sgMail.send(mailConfig);
-    await sgMail.send(mailConfigSecond);
+    await sgMail.send(sendContactFormConfig);
+    await sgMail.send(sendResponseContactFormCofig);
     res.status(200).send("Tu mensaje fue enviado.");
   } catch (error) {
     console.log("ERROR", error);

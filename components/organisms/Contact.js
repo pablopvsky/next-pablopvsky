@@ -1,34 +1,36 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 import { sendContactForm } from "services/contact";
-import { UseInputValue } from "hook/UseInputValue";
+import { useForm, useFormReset } from "hooks/useForm";
 import { contactFormSchema } from "lib/validation-schema";
 
 function Contact() {
-  const firstRender = useRef(true);
-  const email = UseInputValue("");
-  const message = UseInputValue("");
-  const data = { email, message };
-  const values = { email: email.value, message: message.value };
-  const [disabled, setDisabled] = useState(true);
+  const [isValid, setIsValid] = useState(false);
   const [status, setStatus] = useState({
     wait: false,
+    submited: false,
     info: { error: false, msg: null },
   });
 
+  const data = useForm({
+    initialValues: {
+      email: "",
+      message: "",
+    },
+  });
+
   useEffect(() => {
-    if (firstRender.current) {
-      firstRender.current = false;
-      return;
-    }
-    setDisabled(contactFormSchema(data));
-  }, [message, email]);
+    setIsValid(contactFormSchema(data));
+  }, [data]);
 
   const handleOnSubmit = async (event) => {
     event.preventDefault();
     setStatus((prevStatus) => ({ ...prevStatus, wait: true }));
 
-    const res = await sendContactForm(values);
+    const res = await sendContactForm({
+      email: data.email.value,
+      message: data.message.value,
+    });
     const text = await res.text();
 
     handleResponse(res, text);
@@ -38,10 +40,10 @@ function Contact() {
     if (res.status === 200) {
       setStatus({
         wait: false,
+        submited: true,
         info: { error: false, msg: msg },
       });
-      email.reset();
-      message.reset();
+      useFormReset(data);
     } else {
       setStatus({
         info: { error: true, msg: msg },
@@ -70,20 +72,14 @@ function Contact() {
                 id="email"
                 type="email"
                 placeholder="Correo electrónico"
-                {...email}
-                required
+                {...data.email}
               />
-              {email.error && email.error}
-              <textarea
-                id="message"
-                placeholder="Mensaje"
-                {...message}
-                required
-              />
+              {data.email.error && data.email.touch && data.email.error}
+              <textarea id="message" placeholder="Mensaje" {...data.message} />
               <button
                 type="submit"
-                className={`button-fill fluid halo ${disabled && "disable"}`}
-                disabled={disabled}
+                className={`button-fill fluid halo ${!isValid && "disable"}`}
+                disabled={!isValid}
               >
                 <span className="container">
                   {!status.wait ? "Enviar" : "Enviando..."}
@@ -91,17 +87,15 @@ function Contact() {
               </button>
             </form>
 
-            {status.info.error && (
-              <div className="mod wall-pad orange centertxt">
-                {status.info.msg}
-              </div>
-            )}
+            <>
+              {status.info.error && (
+                <div className="mod wall-pad orange centertxt">
+                  {status.info.msg}
+                </div>
+              )}
+            </>
 
-            {!status.info.error && status.info.msg && (
-              <div className="mod wall-pad blue centertxt">
-                {status.info.msg}
-              </div>
-            )}
+            <div className="mod wall-pad blue centertxt">{status.info.msg}</div>
           </div>
         </div>
       </div>
