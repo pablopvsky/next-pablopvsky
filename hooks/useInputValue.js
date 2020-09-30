@@ -11,5 +11,5 @@ export const useInputValue = (initialValue) => {
   const reset = () => setValue("");
   const validate = setError;
 
-  return { value, error, touch, onChange, reset, validate };
+  return { value, error, touch, onChange, reset, validate, setTouch };
 };

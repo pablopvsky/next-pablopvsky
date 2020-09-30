@@ -1,27 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { sendContactForm } from "services/contact";
-import { useForm, useFormReset } from "hooks/useForm";
+import { useForm, useFormReset, useFormIsValid } from "hooks/useForm";
 import { contactFormSchema } from "lib/validation-schema";
 
 function Contact() {
-  const [isValid, setIsValid] = useState(false);
-  const [status, setStatus] = useState({
-    wait: false,
-    submited: false,
-    info: { error: false, msg: null },
-  });
-
   const data = useForm({
     initialValues: {
       email: "",
       message: "",
     },
   });
-
-  useEffect(() => {
-    setIsValid(contactFormSchema(data));
-  }, [data]);
+  const [status, setStatus] = useState({
+    wait: false,
+    submited: false,
+    info: { error: false, msg: null },
+  });
+  const isValid = useFormIsValid(data, contactFormSchema);
 
   const handleOnSubmit = async (event) => {
     event.preventDefault();
@@ -75,7 +70,9 @@ function Contact() {
                 {...data.email}
               />
               {data.email.error && data.email.touch && data.email.error}
+
               <textarea id="message" placeholder="Mensaje" {...data.message} />
+              {data.message.error && data.message.touch && data.message.error}
               <button
                 type="submit"
                 className={`button-fill fluid halo ${!isValid && "disable"}`}
