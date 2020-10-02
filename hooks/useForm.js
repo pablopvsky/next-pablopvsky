@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useInputValue } from "hooks/useInputValue";
 
-export const useForm = ({ initialValues }) => {
+export const useForm = (initialValues) => {
   let data = {};
 
   for (const value in initialValues) {

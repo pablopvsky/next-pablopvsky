@@ -9,7 +9,7 @@ export const useInputValue = (initialValue) => {
     setValue(e.target.value), setTouch(true);
   };
   const reset = () => setValue("");
-  const validate = setError;
+  const dialog = setError;
 
-  return { value, error, touch, onChange, reset, validate, setTouch };
+  return { value, error, touch, onChange, reset, dialog, setTouch };
 };

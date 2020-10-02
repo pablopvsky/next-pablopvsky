@@ -6,10 +6,8 @@ import { contactFormSchema } from "lib/validation-schema";
 
 function Contact() {
   const data = useForm({
-    initialValues: {
-      email: "",
-      message: "",
-    },
+    email: "",
+    message: "",
   });
   const [status, setStatus] = useState({
     wait: false,
