@@ -18,7 +18,7 @@ Router.events.on("routeChangeError", () => {
 });
 
 const Layout = ({ children }) => (
-  <main className="dark-mode iAWriterMonoS">
+  <main className="dark-mode">
     <Navbar />
     <SubHeader />
     <div className="page">

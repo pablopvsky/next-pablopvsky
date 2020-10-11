@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "aura-design-system/lib"
+import { Button, Input } from "aura-design-system/lib"
 
 import { sendContactForm } from "services/contact";
 import { useForm, useFormReset, useFormIsValid } from "hooks/useForm";
@@ -61,18 +61,19 @@ function Contact() {
           </p>
         </div>
         <div className="smosh pad">
-          <div className="inputer">
+
             <form onSubmit={handleOnSubmit}>
-              <input
+              <Input 
                 id="email"
                 type="email"
                 placeholder="Correo electrónico"
+                dialog={data.email.error && data.email.touch && data.email.error}
                 {...data.email.input}
               />
-              {data.email.error && data.email.touch && data.email.error}
-
+                      <div className="inputer">
               <textarea id="message" placeholder="Mensaje" {...data.message.input} />
               {data.message.error && data.message.touch && data.message.error}
+              </div>
               <Button
                 mode="fill" 
                 type="submit"
@@ -93,7 +94,6 @@ function Contact() {
             <div className="mod wall-pad blue centertxt">{status.info.msg}</div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

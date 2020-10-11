@@ -1,3 +1,16 @@
+*:root {
+  --font-stack: "iAWriterMonoS";
+  --sub-header: url("https://images.prismic.io/pablopvsky/f60ccbfb-5f89-4d38-a592-0397a02696df_pablopvsky-subheader.jpg?auto=compress,format");
+}
+
+.dark-mode {
+  --white: #000000;
+  --blue: #4bbdcc;
+  --purple: #974493;
+  --base-color: var(--purple);
+  --sub-header: url("https://images.prismic.io/pablopvsky/f60ccbfb-5f89-4d38-a592-0397a02696df_pablopvsky-subheader.jpg?auto=compress,format");
+}
+
 @font-face {
   font-family: "iAWriterMonoS";
   src: url("/fonts/iAWriterMonoS-Regular.woff2") format("woff2"),
@@ -47,13 +60,6 @@ h6 {
 
 .futura-pt {
   font-family: futura-pt;
-}
-
-.dark-mode {
-  --white: #000000;
-  --blue: #4bbdcc;
-  --purple: #974493;
-  --base-color: var(--purple);
 }
 
 .figure-down {
