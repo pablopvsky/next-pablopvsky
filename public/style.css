@@ -75,3 +75,16 @@ h6 {
   background-position: center;
   background-attachment: fixed;
 }
+
+/* Temporal patch */
+.inputer input:focus {
+  background-color: var(--realse);
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.inputer textarea {
+  color: var(--root);
+}

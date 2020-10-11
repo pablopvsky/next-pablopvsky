@@ -16,7 +16,7 @@ export const useForm = (initialValues) => {
 
 export const useFormReset = (data) => {
   for (const value in data) {
-    data[value].reset(), data[value].setTouch(false);
+    data[value].reset(), data[value].touched(false);
   }
 };
 

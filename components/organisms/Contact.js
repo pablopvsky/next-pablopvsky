@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "aura-design-system/lib"
 
 import { sendContactForm } from "services/contact";
 import { useForm, useFormReset, useFormIsValid } from "hooks/useForm";
@@ -52,6 +53,7 @@ function Contact() {
             Hagamos <span className="blue-text">algo</span>
             <br />
             <span className="purple-text">interesante posible</span>
+   
           </h3>
           <p>
             Si necesitas una solución personalizada, una asesoría o simplemente
@@ -65,21 +67,19 @@ function Contact() {
                 id="email"
                 type="email"
                 placeholder="Correo electrónico"
-                {...data.email}
+                {...data.email.input}
               />
               {data.email.error && data.email.touch && data.email.error}
 
-              <textarea id="message" placeholder="Mensaje" {...data.message} />
+              <textarea id="message" placeholder="Mensaje" {...data.message.input} />
               {data.message.error && data.message.touch && data.message.error}
-              <button
+              <Button
+                mode="fill" 
                 type="submit"
-                className={`button-fill fluid halo ${!isValid && "disable"}`}
                 disabled={!isValid}
-              >
-                <span className="container">
-                  {!status.wait ? "Enviar" : "Enviando..."}
-                </span>
-              </button>
+                label={!status.wait ? "Enviar" : "Enviando..."}
+                fluid
+              />
             </form>
 
             <>
@@ -89,7 +89,7 @@ function Contact() {
                 </div>
               )}
             </>
-
+                
             <div className="mod wall-pad blue centertxt">{status.info.msg}</div>
           </div>
         </div>
