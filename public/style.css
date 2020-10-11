@@ -88,3 +88,7 @@ button:disabled {
 .inputer textarea {
   color: var(--root);
 }
+
+.inputer textarea {
+  font: inherit;
+}
