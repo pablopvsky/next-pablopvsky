@@ -11,7 +11,7 @@ const Intro = () => (
             </p>
             <p>
               Creo en el conocimiento, en la experiencia, en el respeto, la
-              amistad, el placer de servir en crear y en que todo es posible.{" "}
+              amistad, el placer de servir y en que todo es posible.{" "}
             </p>
           </div>
           <div className="block-img smosh figure-down floating">

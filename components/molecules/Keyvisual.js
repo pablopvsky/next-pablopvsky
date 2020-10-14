@@ -7,8 +7,7 @@ const Keyvisual = () => (
       <div className="smash centertxt">
         <h3 className="blue-text">Es una promesa</h3>
         <p>
-          Todos estamos expuestos al error, pero son de esos errores los que nos
-          hacen dudar y crecer.
+          Todos estamos expuestos al error, pero son estos errores lo que nos permite crecer.
         </p>
       </div>
       <div className="pad">

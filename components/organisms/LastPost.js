@@ -6,7 +6,7 @@ const LastPost = () => (
       <div className="pad centertxt">
         <p className="purple-text">
           Me encanta hablar acerca de las cosas que me gusta, matemáticas, arte,
-          literatura, filosofía. Pero escribo de cómo se hace posible.
+          literatura, filosofía. Pero escribo de cómo es posible hacer las ideas realidad.
         </p>
       </div>
       <div className="centertxt">
