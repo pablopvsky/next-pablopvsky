@@ -1,6 +1,7 @@
+import { Section, Image } from "aura-design-system/lib"
+
 const HeroBanner = () => (
-  <section className="bg-circles">
-    <div className="smesh">
+  <Section className="bg-circles" container="smesh" space>
       <div className="aureole two">
         <div className="one valign">
           <div className="centertxt pad">
@@ -13,13 +14,14 @@ const HeroBanner = () => (
           </div>
         </div>
         <div className="two">
-          <div className="block-img">
-            <img src="https://images.prismic.io/pablopvsky/5eb03355-0b13-4595-b58d-fead1e0eafa0_pablo+orozco+montes+pablopvsky.jpg?auto=compress,format" />
-          </div>
+          <Image 
+            src="https://images.prismic.io/pablopvsky/5eb03355-0b13-4595-b58d-fead1e0eafa0_pablo+orozco+montes+pablopvsky.jpg?auto=compress,format"
+            placeholder="https://images.prismic.io/pablopvsky/5eb03355-0b13-4595-b58d-fead1e0eafa0_pablo+orozco+montes+pablopvsky.jpg?auto=compress,format&w=10"
+            with="1034"
+          />
         </div>
       </div>
-    </div>
-  </section>
+  </Section>
 );
 
 export default HeroBanner;

@@ -4,7 +4,7 @@ import Contact from "@organisms/Contact";
 import LastPost from "@organisms/LastPost";
 import LastProject from "@organisms/LastProject";
 import HeroBanner from "@molecules/HeroBanner";
-import Intro from "@molecules/Intro";
+import Intro from "@components/Intro";
 import Keyvisual from "@molecules/Keyvisual";
 
 const Home = () => (

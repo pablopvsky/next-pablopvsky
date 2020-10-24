@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import HeadContent from "@atoms/HeadContent";
+import HeadContent from "@components/HeadContent";
 
 export default class extends Document {
   render() {
