@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Input } from "aura-design-system/lib"
+import { Button, Input } from "aura-design-system"
 
 import { sendContactForm } from "services/contact";
 import { useForm, useFormReset, useFormIsValid } from "hooks/useForm";

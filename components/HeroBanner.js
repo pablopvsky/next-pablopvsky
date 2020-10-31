@@ -1,4 +1,5 @@
-import { Section, Image } from "aura-design-system/lib"
+import { Section } from "aura-design-system"
+import Image from "next/image"
 
 const HeroBanner = () => (
   <Section className="bg-circles" container="smesh" space>
@@ -16,8 +17,8 @@ const HeroBanner = () => (
         <div className="two">
           <Image 
             src="https://images.prismic.io/pablopvsky/5eb03355-0b13-4595-b58d-fead1e0eafa0_pablo+orozco+montes+pablopvsky.jpg?auto=compress,format"
-            placeholder="https://images.prismic.io/pablopvsky/5eb03355-0b13-4595-b58d-fead1e0eafa0_pablo+orozco+montes+pablopvsky.jpg?auto=compress,format&w=10"
-            with="1034"
+            width={400}
+            height={350}
           />
         </div>
       </div>

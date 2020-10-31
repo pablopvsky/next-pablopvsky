@@ -1,4 +1,4 @@
-import Module from "@molecules/Module";
+import Module from "@components/Module";
 
 const LastPost = () => (
   <section className="pad blue">

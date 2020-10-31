@@ -8,8 +8,8 @@
   "license": "MIT",
   "dependencies": {
     "@sendgrid/mail": "^7.2.6",
-    "aura-design-system": "^1.0.7",
-    "next": "^9.5.5",
+    "aura-design-system": "^1.0.20",
+    "next": "^10.0.0",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

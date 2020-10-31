@@ -1,4 +1,5 @@
-import { Image, Section } from "aura-design-system/lib"
+import { Section } from "aura-design-system"
+import Image from "next/image"
 
 const Intro = () => (
     <Section className="bg-circles" subClassName="centertxt">
@@ -14,9 +15,10 @@ const Intro = () => (
             </p>
           </Section>
           <Image 
-            className="smosh figure-down floating" 
+            className="floating" 
             src="https://images.prismic.io/pablopvsky/5b66ab04-19c3-4755-a103-ec8bd96e9052_figura+pablopvsky.png?auto=compress,format"
-            placeholder="https://images.prismic.io/pablopvsky/5b66ab04-19c3-4755-a103-ec8bd96e9052_figura+pablopvsky.png?auto=compress,format&q=0&dpr=1"
+            width={400}
+            height={400}
           />
     </Section>
 );

@@ -1,13 +1,12 @@
 *:root {
   --font-stack: "iAWriterMonoS";
-  --sub-header: url("https://images.prismic.io/pablopvsky/f60ccbfb-5f89-4d38-a592-0397a02696df_pablopvsky-subheader.jpg?auto=compress,format");
 }
 
 .dark-mode {
-  --white: #000000;
-  --blue: #4bbdcc;
-  --purple: #974493;
-  --base-color: var(--purple);
+  --aura-white: #000000;
+  --aura-blue: #4bbdcc;
+  --aura-purple: #974493;
+  --aura-base-color: var(--purple);
   --sub-header: url("https://images.prismic.io/pablopvsky/f60ccbfb-5f89-4d38-a592-0397a02696df_pablopvsky-subheader.jpg?auto=compress,format");
 }
 
@@ -68,11 +67,11 @@ h6 {
 }
 
 .blue-text {
-  color: var(--blue);
+  color: var(--aura-blue);
 }
 
 .purple-text {
-  color: var(--purple);
+  color: var(--aura-purple);
 }
 
 .bg-circles {
@@ -82,19 +81,3 @@ h6 {
   background-attachment: fixed;
 }
 
-/* Temporal patch */
-.inputer input:focus {
-  background-color: var(--realse);
-}
-
-button:disabled {
-  opacity: 0.5;
-}
-
-.inputer textarea {
-  color: var(--root);
-}
-
-.inputer textarea {
-  font: inherit;
-}
