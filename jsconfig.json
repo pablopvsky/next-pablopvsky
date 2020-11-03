@@ -2,12 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@atoms/*": ["components/atoms/*"],
-      "@molecules/*": ["components/molecules/*"],
-      "@organisms/*": ["components/organisms/*"],
-      "@templates/*": ["components/templates/*"],
+      "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@api/*": ["api/*"],
+      "@services/*": ["services/*"],
+      "@slices/*": ["slices/*"],
+      "@lib/*": ["lib/*"],
       "@seo/*": ["lib/seo/*"]
     }
   }
