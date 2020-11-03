@@ -3,12 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],
-      "@atoms/*": ["components/atoms/*"],
-      "@molecules/*": ["components/molecules/*"],
-      "@organisms/*": ["components/organisms/*"],
-      "@templates/*": ["components/templates/*"],
       "@pages/*": ["pages/*"],
-      "@api/*": ["api/*"],
+      "@services/*": ["services/*"],
+      "@slices/*": ["slices/*"],
+      "@lib/*": ["lib/*"],
       "@seo/*": ["lib/seo/*"]
     }
   }

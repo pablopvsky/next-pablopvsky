@@ -1,18 +1,27 @@
-const Navbar = () => (
-  <header>
-    <nav id="Navbar" className="navbar">
-      <div className="nav-wrapper">
+import Link from "next/link";
+import { Navbar, Header, Menu, Icon, Button } from "aura-design-system";
+
+const MyNavbar = ({ text, data }) => {
+  return (
+    <>
+      <Navbar>
         <ul className="nav-list">
-          <li className="logo item">
-            <a>
-              <div className="glyphsSprite p logo " />
-            </a>
+          <li className="item logo">
+            <Link href="/">
+              <a aria-label="Logo">
+                <Icon className={`p ${data?.logo}`} />
+              </a>
+            </Link>
           </li>
           <li className="item"></li>
         </ul>
-      </div>
-    </nav>
-  </header>
-);
+      </Navbar>
+      <Header
+        text={text}
+        style={{ backgroundImage: `url(${data?.subheader_cover?.url})` }}
+      ></Header>
+    </>
+  );
+};
 
-export default Navbar;
+export default MyNavbar;
