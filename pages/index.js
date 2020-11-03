@@ -10,7 +10,6 @@ import HomepageBodyImage_gallery from "@slices/HomepageBodyImage_gallery";
 import HomepageBodyContact_form from "@slices/HomepageBodyContact_form";
 
 const Home = ({ page, preview, layout }) => {
-  console.log(page);
   return (
     <Layout preview={preview} data={layout} text="Pablopvsky">
       <GeneralSeo />

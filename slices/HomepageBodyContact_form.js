@@ -23,9 +23,10 @@ function HomepageBodyContact_form({ slice, bg }) {
     setStatus((prevStatus) => ({ ...prevStatus, wait: true }));
 
     const res = await sendContactForm({
-      email: data.email.value,
-      message: data.message.value,
+      email: data.email.input.value,
+      message: data.message.input.value,
     });
+
     const text = await res.text();
 
     handleResponse(res, text);
@@ -84,16 +85,15 @@ function HomepageBodyContact_form({ slice, bg }) {
             fluid
           />
         </form>
-
-        <>
+        <div>
+          <span className="aura" />
           {status.info.error && (
             <div className="mod wall-pad orange centertxt">
               {status.info.msg}
             </div>
           )}
-        </>
-
-        <div className="mod wall-pad blue centertxt">{status.info.msg}</div>
+          <div className="mod wall-pad blue centertxt">{status.info.msg}</div>
+        </div>
       </div>
     </Section>
   );
