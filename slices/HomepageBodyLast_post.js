@@ -4,9 +4,9 @@ import { RichText } from "prismic-reactjs";
 const HomepageBodyLast_post = ({ data }) => (
   <Section color="blue" container="smash">
     <Section className="centertxt" passDiv>
-      <p className="purple-text">
-        {RichText.asText(data.primary.last_post_description)}
-      </p>
+      <div className="white-text">
+        {RichText.render(data.primary.last_post_description)}
+      </div>
     </Section>
   </Section>
 );

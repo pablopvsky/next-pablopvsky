@@ -79,6 +79,10 @@ h6 {
   color: var(--aura-purple);
 }
 
+.purple-text-2 {
+  color: var(--aura-purple-2);
+}
+
 .bg {
   background-size: contain;
   background-position: center;

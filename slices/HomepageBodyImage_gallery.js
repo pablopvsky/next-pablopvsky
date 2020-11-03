@@ -18,6 +18,7 @@ const HomepageBodyImage_gallery = ({ data, ...props }) => {
             <div className="mod zoom">
               <Link href={item?.column_gallery_image_item.url}>
                 <a
+                  aria-label={item.column_gallery_image.alt}
                   target={item?.column_gallery_image_item?.target}
                   rel={
                     item.column_gallery_image_item?.__typename ===

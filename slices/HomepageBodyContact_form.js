@@ -73,6 +73,7 @@ function HomepageBodyContact_form({ slice, bg }) {
             <textarea
               id="message"
               placeholder="Mensaje"
+              aria-label="Mensaje"
               {...data.message.input}
             />
             {data.message.error && data.message.touch && data.message.error}
