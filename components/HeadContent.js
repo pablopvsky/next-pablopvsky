@@ -44,7 +44,6 @@ const HeadContent = () => (
       sizes="152x152"
       href={`${GLOBAL.favIcon}&w=152&h=152`}
     />
-    <link rel="stylesheet" href="https://use.typekit.net/vdw8shd.css" />
     <link href="/style.css" rel="stylesheet" />
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta
