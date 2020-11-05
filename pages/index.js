@@ -71,6 +71,8 @@ const Home = ({ page, preview, layout }) => {
                 key={index}
               />
             );
+          default:
+            return;
         }
       })}
     </Layout>
