@@ -26,6 +26,7 @@ const HomepageBodyImage_gallery = ({ data, ...props }) => {
                       ? "noopener"
                       : ""
                   }
+                  className="halo"
                 >
                   <Image
                     src={item.column_gallery_image.url}
