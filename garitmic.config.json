@@ -1,5 +1,5 @@
-
 {
+  "es-CO" :{
     "siteName": "Pablopvsky",
     "siteDescription": "Pablo Orozco Montes, Publicista, Escritor, Artista, Programador. El mundo no es tan teso, Una breve descripción de mi persona es el compromiso con el bienestar.",
     "siteURL": "https://pablopvsky.com",
@@ -17,4 +17,24 @@
       "twitter": "pablopvsky",
       "openGrap": "https://images.prismic.io/garitma%2F6c1c4bbe-430e-457a-ae2b-fe45ba615466_featured-pablopvsky.jpg?auto=compress,format"
     }
+  },
+  "en-US" :{
+    "siteName": "Pablopvsky",
+    "siteDescription": "Pablo Orozco Montes, Advertiser, Writer, Artist, Programmer. The world is not that talented. A brief description of myself is the commitment to well-being.",
+    "siteURL": "https://pablopvsky.com/en-US",
+    "layoutUid": "pablopvsky",
+    "apiEndpoint": "https://pablopvsky.cdn.prismic.io/api/v2",
+    "apiGraphqlEndpoint": "https://pablopvsky.prismic.io/graphql",
+    "favIcon": "https://images.prismic.io/garitma%2F9770e893-6e3f-4c08-b3b8-5bfbb5f8236b_favicon-192.png?auto=compress,format",
+    "contactEmail": "me@pablopvsky.com",
+    "lang": "es-us",
+    "timeZone": "UTC-4",
+    "dateFormat": "LL",
+    "ArchivePageSize": "12",
+    "social": {
+      "instagram": "pablopvsky",
+      "twitter": "pablopvsky",
+      "openGrap": "https://images.prismic.io/garitma%2F6c1c4bbe-430e-457a-ae2b-fe45ba615466_featured-pablopvsky.jpg?auto=compress,format"
+    }
   }
+}

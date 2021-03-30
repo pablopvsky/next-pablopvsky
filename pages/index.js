@@ -1,4 +1,4 @@
-import GeneralSeo from "@seo/GeneralSeo";
+import { formatMeta } from "@utils/formMeta";
 import Layout from "@components/Layout";
 import HomepageBodyHerobanner from "@components/HomepageBodyHerobanner";
 import HomepageBodyHero_one from "@components/HomepageBodyHero_one";
@@ -7,19 +7,19 @@ import HomepageBodyImage from "@components/HomepageBodyImage";
 import HomepageBodyIntro from "@components/HomepageBodyIntro";
 import HomepageBodyImage_gallery from "@components/HomepageBodyImage_gallery";
 
-const Home = ({ preview }) => {
+const Home = ({ preview, locale }) => {
   return (
-    <Layout preview={preview} text="Pablopvsky">
-      <GeneralSeo />
-      <HomepageBodyHerobanner />
-      <HomepageBodyHero_one />
-      <HomepageBodyLast_post />
+    <Layout preview={preview} text="Pablopvsky" locale={locale}>
+      {formatMeta(null, locale)}
+      <HomepageBodyHerobanner locale={locale} />
+      <HomepageBodyHero_one locale={locale} />
+      <HomepageBodyLast_post locale={locale} />
       <HomepageBodyImage
         src="https://images.prismic.io/pablopvsky/3b50208f-5572-4526-af98-1db29440bbb8_9d60f9b0-b3fc-4332-bc2f-95df7afeb9d4_arrow-down.png?auto=compress,format"
         height={208}
         width={10}
       />
-      <HomepageBodyImage_gallery />
+      <HomepageBodyImage_gallery locale={locale} />
       <HomepageBodyImage
         src="https://images.prismic.io/pablopvsky/3b50208f-5572-4526-af98-1db29440bbb8_9d60f9b0-b3fc-4332-bc2f-95df7afeb9d4_arrow-down.png?auto=compress,format"
         height={208}
@@ -30,7 +30,7 @@ const Home = ({ preview }) => {
         height={833}
         width={936}
       />
-      <HomepageBodyIntro />
+      <HomepageBodyIntro locale={locale} />
       <HomepageBodyImage
         src="https://images.prismic.io/pablopvsky/3b50208f-5572-4526-af98-1db29440bbb8_9d60f9b0-b3fc-4332-bc2f-95df7afeb9d4_arrow-down.png?auto=compress,format"
         height={208}
@@ -45,9 +45,13 @@ const Home = ({ preview }) => {
   );
 };
 
-export const getStaticProps = async ({ preview = false, previewData }) => {
+export const getStaticProps = async ({
+  preview = false,
+  previewData,
+  locale,
+}) => {
   return {
-    props: { preview },
+    props: { preview, locale },
   };
 };
 

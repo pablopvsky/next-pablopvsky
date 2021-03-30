@@ -2,15 +2,24 @@ import Image from "next/image";
 import Grid from "aura-design-system/core/grid";
 import Section from "aura-design-system/core/section";
 
-const HomepageBodyImage_gallery = ({ ...props }) => {
+const HomepageBodyImage_gallery = ({ locale, ...props }) => {
   return (
     <Section container="smesh" {...props}>
       <Section container="smash" className="centertxt" passDiv>
-        <h3 className="blue-text">Proyectos</h3>
-        <p>
-          Mis ideales con el paso del tiempo se convierten en una realidad, y la
-          materialización de éstas son parte de lo que más me hace feliz.
-        </p>
+        {locale === "en-US" && <h3 className="blue-text">Projects</h3>}
+        {locale === "es-CO" && <h3 className="blue-text">Proyectos</h3>}
+        {locale === "en-US" && (
+          <p>
+            My ideals with the passage of time become a reality, and the
+            materialization of these are part of what makes me the most happy.
+          </p>
+        )}
+        {locale === "es-CO" && (
+          <p>
+            Mis ideales con el paso del tiempo se convierten en una realidad, y
+            la materialización de éstas son parte de lo que más me hace feliz.
+          </p>
+        )}
       </Section>
       <Grid>
         <div className="mod zoom">

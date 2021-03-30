@@ -4,7 +4,7 @@ import HeadContent from "@components/HeadContent";
 export default class extends Document {
   render() {
     return (
-      <Html lang="es-co">
+      <Html>
         <Head>
           <meta charSet="UTF-8" />
           <HeadContent />

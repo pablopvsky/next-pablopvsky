@@ -11,7 +11,7 @@ const MyFooter = () => {
             <Icon className={`glyphsSprite  p logo-p`} />
           </div>
           <p className="centertxt-small">
-            ©2020 Pablopvsky. Todos los derechos reservados
+            ©2021 Pablopvsky. Todos los derechos reservados
           </p>
         </div>
         <div className="two smosh">

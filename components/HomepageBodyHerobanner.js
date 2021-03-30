@@ -2,7 +2,7 @@ import Section from "aura-design-system/core/section";
 import Image from "next/image";
 import { RichText } from "prismic-reactjs";
 
-const HomepageBodyHerobanner = ({ data, bg }) => (
+const HomepageBodyHerobanner = ({ locale }) => (
   <Section container="smesh" space="p0">
     <div className="bg">
       <div className="aureole two">
@@ -13,7 +13,12 @@ const HomepageBodyHerobanner = ({ data, bg }) => (
               <span className="purple-text">Orozco</span>{" "}
               <span className="blue-text">Montes</span>
             </h1>
-            <p>Publicista, Escritor, Artista, Programador.</p>
+            {locale === "en-US" && (
+              <p>Advertiser, Writer, Artist, Programmer.</p>
+            )}
+            {locale === "es-CO" && (
+              <p>Publicista, Escritor, Artista, Programador.</p>
+            )}
           </div>
         </div>
         <div className="two">

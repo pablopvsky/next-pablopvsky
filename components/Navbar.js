@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Link from "next/link";
 import Icon from "aura-design-system/core/atoms/icon";
 
-const MyNavbar = ({ text, data }) => {
+const MyNavbar = ({ text, data, locale }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header
       className="aura"
@@ -18,9 +21,33 @@ const MyNavbar = ({ text, data }) => {
               </a>
             </Link>
           </li>
-          <li className=""></li>
+          <li className="">
+            <button
+              className="button-link mod accents-1"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {locale === "en-US" && "EN"}
+              {locale === "es-CO" && "ES"}
+            </button>
+          </li>
         </ul>
       </div>
+      {isOpen && (
+        <div className="smush anchor">
+          <ul className="mod-detail pin right aureole one v-list lefttxt">
+            <li>
+              <Link href="/" locale="es-CO">
+                <a>🇨🇴 ES</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/" locale="en-US">
+                <a>🇺🇸 EN</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
       <div>
         <h1 className="light pablopvsky centertxt">Pablopvsky</h1>
       </div>

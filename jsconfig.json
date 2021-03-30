@@ -4,10 +4,7 @@
     "paths": {
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@services/*": ["services/*"],
-      "@slices/*": ["slices/*"],
-      "@lib/*": ["lib/*"],
-      "@seo/*": ["lib/seo/*"]
+      "@utils/*": ["utils/*"],
     }
   }
 }
