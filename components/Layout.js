@@ -18,11 +18,11 @@ Router.events.on("routeChangeError", () => {
 
 const Layout = ({ children, data, text }) => {
   return (
-    <main className={data?.dark_mode ? "dark-mode" : "light-mode"}>
+    <main>
       <div className="page">
-        <Navbar text={text} data={data} />
+        <Navbar text={text} />
         <div className="page-body ">{children}</div>
-        <Footer data={data} />
+        <Footer />
       </div>
     </main>
   );

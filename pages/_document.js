@@ -9,7 +9,7 @@ export default class extends Document {
           <meta charSet="UTF-8" />
           <HeadContent />
         </Head>
-        <body>
+        <body className="iAWriterMonoS">
           <Main />
           <NextScript />
         </body>

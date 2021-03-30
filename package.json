@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "@sendgrid/mail": "^7.3.0",
-    "aura-design-system": "^1.0.22",
+    "aura-design-system": "^1.1.8",
     "next": "^10.0.0",
     "nprogress": "^0.2.0",
     "prismic-javascript": "^3.0.2",

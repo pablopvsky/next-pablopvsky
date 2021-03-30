@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button, Input, Section } from "aura-design-system";
+import { Button, Input } from "aura-design-system";
+import Section from "aura-design-system/core/section";
 import { RichText } from "prismic-reactjs";
 
 import { sendContactForm } from "services/contact";
