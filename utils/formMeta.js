@@ -17,15 +17,11 @@ export const formatMeta = (document, locale) => {
       />
       <link
         rel="alternate"
-        href={`${GLOBAL["es-CO"].siteURL}`}
+        href={`${GLOBAL["es"].siteURL}`}
         hreflang="x-default"
       />
-      <link
-        rel="alternate"
-        href={`${GLOBAL["en-US"].siteURL}`}
-        hreflang="en-US"
-      />
-      <meta http-equiv="Content-Language" content={GLOBAL[locale].lang} />
+      <link rel="alternate" href={`${GLOBAL["en"].siteURL}`} hreflang="en" />
+      <meta httpEquiv="Content-Language" content={GLOBAL[locale].lang} />
       <meta name="robots" content="index,follow" />
       <meta name="googlebot" content="index,follow" />
       <meta

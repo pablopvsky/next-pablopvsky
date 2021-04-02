@@ -12,37 +12,37 @@ const HeadContent = () => (
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href={`${GLOBAL["es-CO"].favIcon}&w=57&h=57`}
+      href={`${GLOBAL["es"].favIcon}&w=57&h=57`}
     />
     <link
       rel="apple-touch-icon-precomposed"
       sizes="57x57"
-      href={`${GLOBAL["es-CO"].favIcon}&w=57&h=57`}
+      href={`${GLOBAL["es"].favIcon}&w=57&h=57`}
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href={`${GLOBAL["es-CO"].favIcon}&w=72&h=72`}
+      href={`${GLOBAL["es"].favIcon}&w=72&h=72`}
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href={`${GLOBAL["es-CO"].favIcon}&w=114&h=114`}
+      href={`${GLOBAL["es"].favIcon}&w=114&h=114`}
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href={`${GLOBAL["es-CO"].favIcon}&w=120h=120`}
+      href={`${GLOBAL["es"].favIcon}&w=120h=120`}
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href={`${GLOBAL["es-CO"].favIcon}&w=144&h=144`}
+      href={`${GLOBAL["es"].favIcon}&w=144&h=144`}
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href={`${GLOBAL["es-CO"].favIcon}&w=152&h=152`}
+      href={`${GLOBAL["es"].favIcon}&w=152&h=152`}
     />
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta

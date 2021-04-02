@@ -5,13 +5,13 @@ import { RichText } from "prismic-reactjs";
 const HomepageBodyHero_one = ({ locale }) => (
   <Section className="bg" subClassName="centertxt">
     <Section container="smash">
-      {locale === "en-US" && (
+      {locale === "en" && (
         <h2 className="blue-text">The world is not that talented</h2>
       )}
-      {locale === "es-CO" && (
+      {locale === "es" && (
         <h2 className="blue-text">El Mundo no es tan teso</h2>
       )}
-      {locale === "en-US" && (
+      {locale === "en" && (
         <>
           <p>
             I live to be happy and radically remove any stone that is get in the
@@ -23,7 +23,7 @@ const HomepageBodyHero_one = ({ locale }) => (
           </p>
         </>
       )}
-      {locale === "es-CO" && (
+      {locale === "es" && (
         <>
           <p>
             Vivo para ser feliz y elimino de forma radical cualquier piedra que

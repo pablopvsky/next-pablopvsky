@@ -13,10 +13,8 @@ const HomepageBodyHerobanner = ({ locale }) => (
               <span className="purple-text">Orozco</span>{" "}
               <span className="blue-text">Montes</span>
             </h1>
-            {locale === "en-US" && (
-              <p>Advertiser, Writer, Artist, Programmer.</p>
-            )}
-            {locale === "es-CO" && (
+            {locale === "en" && <p>Advertiser, Writer, Artist, Programmer.</p>}
+            {locale === "es" && (
               <p>Publicista, Escritor, Artista, Programador.</p>
             )}
           </div>

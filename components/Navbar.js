@@ -26,8 +26,8 @@ const MyNavbar = ({ text, data, locale }) => {
               className="button-link mod accents-1"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {locale === "en-US" && "EN"}
-              {locale === "es-CO" && "ES"}
+              {locale === "en" && "EN"}
+              {locale === "es" && "ES"}
             </button>
           </li>
         </ul>
@@ -36,13 +36,13 @@ const MyNavbar = ({ text, data, locale }) => {
         <div className="smush anchor">
           <ul className="mod-detail pin right aureole one v-list lefttxt">
             <li>
-              <Link href="/" locale="es-CO">
-                <a>🇨🇴 ES</a>
+              <Link href="/" locale="es">
+                <a onClick={() => setIsOpen(!isOpen)}>🇨🇴 ES</a>
               </Link>
             </li>
             <li>
-              <Link href="/" locale="en-US">
-                <a>🇺🇸 EN</a>
+              <Link href="/" locale="en">
+                <a onClick={() => setIsOpen(!isOpen)}>🇺🇸 EN</a>
               </Link>
             </li>
           </ul>

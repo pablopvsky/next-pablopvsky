@@ -6,15 +6,15 @@ const HomepageBodyImage_gallery = ({ locale, ...props }) => {
   return (
     <Section container="smesh" {...props}>
       <Section container="smash" className="centertxt" passDiv>
-        {locale === "en-US" && <h3 className="blue-text">Projects</h3>}
-        {locale === "es-CO" && <h3 className="blue-text">Proyectos</h3>}
-        {locale === "en-US" && (
+        {locale === "en" && <h3 className="blue-text">Projects</h3>}
+        {locale === "es" && <h3 className="blue-text">Proyectos</h3>}
+        {locale === "en" && (
           <p>
             My ideals with the passage of time become a reality, and the
             materialization of these are part of what makes me the most happy.
           </p>
         )}
-        {locale === "es-CO" && (
+        {locale === "es" && (
           <p>
             Mis ideales con el paso del tiempo se convierten en una realidad, y
             la materialización de éstas son parte de lo que más me hace feliz.
