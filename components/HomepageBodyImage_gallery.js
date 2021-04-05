@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Grid from "aura-design-system/core/grid";
-import Section from "aura-design-system/core/section";
+import Grid from "aura-design/grid";
+import Section from "aura-design/section";
 
 const HomepageBodyImage_gallery = ({ locale, ...props }) => {
   return (

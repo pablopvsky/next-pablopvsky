@@ -9,7 +9,7 @@
   "dependencies": {
     "@prismicio/client": "^4.0.0",
     "@sendgrid/mail": "^7.3.0",
-    "aura-design-system": "^1.1.8",
+    "aura-design": "^0.0.3",
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
     "next": "^10.1.2",

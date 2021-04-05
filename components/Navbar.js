@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import Icon from "aura-design-system/core/atoms/icon";
+import Icon from "aura-design/atoms/icon";
 
 const MyNavbar = ({ text, data, locale }) => {
   const [isOpen, setIsOpen] = useState(false);

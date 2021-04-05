@@ -1,4 +1,4 @@
-import Section from "aura-design-system/core/section";
+import Section from "aura-design/section";
 import { RichText } from "prismic-reactjs";
 
 const HomepageBodyIntro = ({ locale }) => (
