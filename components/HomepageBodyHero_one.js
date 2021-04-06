@@ -6,7 +6,7 @@ const HomepageBodyHero_one = ({ locale }) => (
   <Section className="bg" subClassName="centertxt">
     <Section container="smash">
       {locale === "en" && (
-        <h2 className="blue-text">The world is not that talented</h2>
+        <h2 className="blue-text">The world is not that hard</h2>
       )}
       {locale === "es" && (
         <h2 className="blue-text">El Mundo no es tan teso</h2>
