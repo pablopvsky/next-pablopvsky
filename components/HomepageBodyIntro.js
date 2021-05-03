@@ -7,14 +7,14 @@ const HomepageBodyIntro = ({ locale }) => (
     {locale === "es" && <h3 className="blue-text">Es una promesa</h3>}
     {locale === "en" && (
       <p>
-        Todos estamos expuestos al error, pero son de esos errores los que nos
-        hacen dudar y crecer.
+        We are all exposed to error, but it is those mistakes that make us doubt
+        and grow.
       </p>
     )}
     {locale === "es" && (
       <p>
-        We are all exposed to error, but it is those mistakes that make us doubt
-        and grow.
+        Todos estamos expuestos al error, pero son de esos errores los que nos
+        hacen dudar y crecer.
       </p>
     )}
   </Section>
