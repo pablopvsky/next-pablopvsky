@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Link from "next/link";
-import Icon from "aura-design/atoms/icon";
+import Image from "next/image";
+import Icon from "aura-design/icon";
 
-const MyNavbar = ({ text, data, locale }) => {
+const Header = ({ text, data, locale }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,8 +17,14 @@ const MyNavbar = ({ text, data, locale }) => {
         <ul className="nav-list">
           <li className="item logo-circle">
             <Link href="/">
-              <a aria-label="Logo">
-                <Icon className="glyphsSprite  p logo" />
+              <a className="halo">
+                <Image
+                  src="https://images.prismic.io/pablopvsky/8fcac4e7-6833-4f63-bb4b-abdfd3f38f9d_logo-pablopvsky.png?auto=compress,format&w=96"
+                  width={48}
+                  height={48}
+                  priority={true}
+                  alt="Logo Pablopvsky"
+                />
               </a>
             </Link>
           </li>
@@ -55,4 +62,4 @@ const MyNavbar = ({ text, data, locale }) => {
   );
 };
 
-export default MyNavbar;
+export default Header;

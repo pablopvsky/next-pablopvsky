@@ -1,4 +1,5 @@
-import { formatMeta } from "@utils/formMeta";
+import { useRouter } from "next/router";
+
 import Layout from "@components/Layout";
 import HomepageBodyHerobanner from "@components/HomepageBodyHerobanner";
 import HomepageBodyHero_one from "@components/HomepageBodyHero_one";
@@ -8,9 +9,10 @@ import HomepageBodyIntro from "@components/HomepageBodyIntro";
 import HomepageBodyImage_gallery from "@components/HomepageBodyImage_gallery";
 
 const Home = ({ preview, locale }) => {
+  const router = useRouter();
+
   return (
     <Layout preview={preview} text="Pablopvsky" locale={locale}>
-      {formatMeta(null, locale)}
       <HomepageBodyHerobanner locale={locale} />
       <HomepageBodyHero_one locale={locale} />
       <HomepageBodyLast_post locale={locale} />

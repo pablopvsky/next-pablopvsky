@@ -79,6 +79,7 @@ body {
 
 .glyphsSprite.p {
   background-image: url(https://images.prismic.io/pablopvsky/bffc722a-2554-478e-8a15-e253e6b71bdf_splite_glyphs.png?auto=compress,format);
+  background-size: 265px 260px;
 }
 
 .glyphsSprite.p.logo {

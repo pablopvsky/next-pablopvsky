@@ -1,5 +1,5 @@
-import GLOBAL from "garitmic.config.json";
-import { GA_TRACKING_ID } from "public/gtag";
+import { GA_TRACKING_ID } from "@utils/gtag";
+import { FAV_ICON } from "@utils/constants";
 
 const HeadContent = () => (
   <>
@@ -9,40 +9,32 @@ const HeadContent = () => (
       href="/favicon.ico"
     />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href={`${GLOBAL["es"].favIcon}&w=57&h=57`}
-    />
+    <link rel="apple-touch-icon" sizes="57x57" href={`${FAV_ICON}&w=57&h=57`} />
     <link
       rel="apple-touch-icon-precomposed"
       sizes="57x57"
-      href={`${GLOBAL["es"].favIcon}&w=57&h=57`}
+      href={`${FAV_ICON}&w=57&h=57`}
     />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href={`${GLOBAL["es"].favIcon}&w=72&h=72`}
-    />
+    <link rel="apple-touch-icon" sizes="72x72" href={`${FAV_ICON}&w=72&h=72`} />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href={`${GLOBAL["es"].favIcon}&w=114&h=114`}
+      href={`${FAV_ICON}&w=114&h=114`}
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href={`${GLOBAL["es"].favIcon}&w=120h=120`}
+      href={`${FAV_ICON}&w=120h=120`}
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href={`${GLOBAL["es"].favIcon}&w=144&h=144`}
+      href={`${FAV_ICON}&w=144&h=144`}
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href={`${GLOBAL["es"].favIcon}&w=152&h=152`}
+      href={`${FAV_ICON}&w=152&h=152`}
     />
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta

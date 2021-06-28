@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Icon from "aura-design/atoms/icon";
+import Icon from "aura-design/icon";
 import Grid from "aura-design/grid";
 
 const MyFooter = () => {
@@ -8,14 +8,14 @@ const MyFooter = () => {
       <Grid col="two">
         <div className="one smosh">
           <div className="centertxt-small">
-            <Icon className={`glyphsSprite  p logo-p`} />
+            <span className="light pablopvsky centertxt h4">Pablopvsky</span>
           </div>
           <p className="centertxt-small">
             ©2021 Pablopvsky. Todos los derechos reservados
           </p>
         </div>
         <div className="two smosh">
-          <ul className="nav-list halign">
+          <ul className="nav-list halign dark">
             <li className="item">
               <a
                 href="https://www.instagram.com/pablopvsky/"

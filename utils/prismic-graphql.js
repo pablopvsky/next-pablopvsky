@@ -4,7 +4,6 @@ import {
   API_TOKEN,
   GRAPHQL_API_URL,
   API_LOCALE,
-  LAYOUT_UID,
 } from "@utils/constants";
 
 import { gql } from "graphql-request";
