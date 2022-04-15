@@ -8,12 +8,19 @@ const Header = ({ text, data, locale }) => {
 
   return (
     <header
-      className="aura"
-      style={{
-        backgroundImage: `url(https://images.prismic.io/pablopvsky/1a9661c7-496f-40b4-b800-a141e32b88b7_f60ccbfb-5f89-4d38-a592-0397a02696df_pablopvsky-subheader.jpg?auto=compress,format)`,
-      }}
+      className="aura anchor"
+      style={{ overflow: "hidden" }}
+    
     >
-      <div className="smush aura">
+       <div>
+        <Image
+          src="https://images.prismic.io/pablopvsky/1a9661c7-496f-40b4-b800-a141e32b88b7_f60ccbfb-5f89-4d38-a592-0397a02696df_pablopvsky-subheader.jpg?auto=compress,format"
+          layout="fill"
+          objectFit="cover"
+          priority={true}
+        />
+      </div>
+      <div className="smush wall-pad">
         <ul className="nav-list">
           <li className="item logo-circle">
             <Link href="/">
@@ -55,8 +62,8 @@ const Header = ({ text, data, locale }) => {
           </ul>
         </div>
       )}
-      <div>
-        <h1 className="light pablopvsky centertxt">Pablopvsky</h1>
+      <div className="anchor">
+        <h1 className="mt0 mb0 pablopvsky centertxt">Pablopvsky</h1>
       </div>
     </header>
   );

@@ -1,5 +1,8 @@
 import { useRouter } from "next/router";
+import { SliceZone } from "@prismicio/react";
+import { components } from "@slices/index";
 
+import { createClient } from "@utils/prismic-rest";
 import Layout from "@components/Layout";
 import HomepageBodyHerobanner from "@components/HomepageBodyHerobanner";
 import HomepageBodyHero_one from "@components/HomepageBodyHero_one";
@@ -8,12 +11,12 @@ import HomepageBodyImage from "@components/HomepageBodyImage";
 import HomepageBodyIntro from "@components/HomepageBodyIntro";
 import HomepageBodyImage_gallery from "@components/HomepageBodyImage_gallery";
 
-const Home = ({ preview, locale }) => {
-  const router = useRouter();
+const Home = ({ preview, locale, document }) => {
+  console.log(document);
 
   return (
     <Layout preview={preview} text="Pablopvsky" locale={locale}>
-      <HomepageBodyHerobanner locale={locale} />
+      <SliceZone slices={document.data.slices} components={components} />
       <HomepageBodyHero_one locale={locale} />
       <HomepageBodyLast_post locale={locale} />
       <HomepageBodyImage
@@ -47,13 +50,11 @@ const Home = ({ preview, locale }) => {
   );
 };
 
-export const getStaticProps = async ({
-  preview = false,
-  previewData,
-  locale,
-}) => {
+export const getStaticProps = async ({ previewData, locale }) => {
+  const client = createClient({ previewData });
+  const document = await client.getSingle("home");
   return {
-    props: { preview, locale },
+    props: { document, locale },
   };
 };
 

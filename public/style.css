@@ -1,10 +1,4 @@
-.dark-mode {
-  --aura-white: #000000;
-  --aura-blue: #4bbdcc;
 
-  --aura-base-color: var(--aura-purple);
-  --sub-header: url("https://images.prismic.io/pablopvsky/f60ccbfb-5f89-4d38-a592-0397a02696df_pablopvsky-subheader.jpg?auto=compress,format");
-}
 
 *:root {
   --aura-font-quotes: serif;
@@ -43,7 +37,6 @@
   --aura-accents-success-bg: var(--aura-teal-green);
   --aura-accents-info: #8b9afa;
   --aura-accents-info-bg: var(--aura-purple);
-
   --aura-accents-danger: #ba4108;
   --aura-accents-danger-bg: var(--aura-orange);
   --aura-accents-radius: var(--aura-radius);
@@ -130,6 +123,6 @@ h6 {
   background-image: url(https://images.prismic.io/pablopvsky/fb63bde5-3e0b-46af-af0e-42cb8512394a_4b26254f-b757-41e0-a6a3-a40c22d99b38_background-circle-figure.jpeg?auto=compress,format);
 }
 
-.inputer textarea {
-  color: var(--root);
+.first-full-width > span:nth-child(1) {
+  display: block;
 }

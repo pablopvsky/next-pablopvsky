@@ -1,0 +1,21 @@
+{
+  "_cts": {
+    "layout": {},
+    "homepage": {},
+    "home": {}
+  },
+  "slices": {
+    "HeroBanner": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

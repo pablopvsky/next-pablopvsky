@@ -1,0 +1,98 @@
+{
+  "slices": {
+    "components": {
+      "hero_banner": {
+        "library": "slices",
+        "id": "hero_banner",
+        "name": "HeroBanner",
+        "description": "HeroBanner",
+        "model": {
+          "id": "hero_banner",
+          "type": "SharedSlice",
+          "name": "HeroBanner",
+          "description": "HeroBanner",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroBanner",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "heading1",
+                    "allowTargetBlank": false,
+                    "placeholder": "This is where it all begins...",
+                    "label": "Title",
+                    "labels": [
+                      "purple-text",
+                      "blue-text"
+                    ]
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {},
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "hero_banner",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Scale innovative architectures",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Reprehenderit cillum ad laborum nostrud aute aliqua Lorem. Sit dolor pariatur sint sit veniam duis officia voluptate culpa anim dolor id labore. Aute voluptate aute eiusmod cupidatat id cillum mollit magna tempor id.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}

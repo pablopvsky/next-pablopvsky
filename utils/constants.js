@@ -18,6 +18,4 @@ export const SITE_DESCRIPTIO =
   "Pablo Orozco Montes, Publicista, Escritor, Artista, Programador. El mundo no es tan teso, Una breve descripción de mi persona es el compromiso con el bienestar.";
 export const API_URL_KIT = "https://garitma.cdn.prismic.io/api/v2";
 export const GRAPHQL_API_URL = "https://garitma.prismic.io/graphql";
-
-export const API_ENDPOINT_KEY = "api";
-export const SEND_ENDPOINT_KEY = "send";
+export const PRISMIC_API_TOKEN = process.env.PRISMIC_API_TOKEN;
