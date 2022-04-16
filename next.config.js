@@ -1,8 +1,8 @@
 module.exports = {
   target: "serverless",
   i18n: {
-    locales: ["en", "es"],
-    defaultLocale: "es",
+    locales: ["en-us", "es-co"],
+    defaultLocale: "es-co",
     localeDetection: false,
   },
   images: {

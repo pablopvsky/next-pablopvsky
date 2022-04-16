@@ -11,7 +11,7 @@ const MyFooter = () => {
             <span className="light pablopvsky centertxt h4">Pablopvsky</span>
           </div>
           <p className="centertxt-small">
-            ©2021 Pablopvsky. Todos los derechos reservados
+            ©2022 Pablopvsky. Todos los derechos reservados
           </p>
         </div>
         <div className="two smosh">

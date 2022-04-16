@@ -7,12 +7,8 @@ const Header = ({ text, data, locale }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header
-      className="aura anchor"
-      style={{ overflow: "hidden" }}
-    
-    >
-       <div>
+    <header className="aura anchor" style={{ overflow: "hidden" }}>
+      <div>
         <Image
           src="https://images.prismic.io/pablopvsky/1a9661c7-496f-40b4-b800-a141e32b88b7_f60ccbfb-5f89-4d38-a592-0397a02696df_pablopvsky-subheader.jpg?auto=compress,format"
           layout="fill"
@@ -35,35 +31,47 @@ const Header = ({ text, data, locale }) => {
               </a>
             </Link>
           </li>
-          <li className="">
+          <li className="z-10">
             <button
-              className="button-link mod accents-1"
+              className="button-link mod accents-1 dark"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {locale === "en" && "EN"}
-              {locale === "es" && "ES"}
+              {isOpen ? (
+                <Icon sprite="close" />
+              ) : (
+                <>
+                  {" "}
+                  {locale === "en-us" && "EN"}
+                  {locale === "es-co" && "ES"}
+                </>
+              )}
             </button>
           </li>
         </ul>
       </div>
       {isOpen && (
         <div className="smush anchor">
-          <ul className="mod-detail pin right aureole one v-list lefttxt">
+          <ul className="mod-detail hold top right left bottom aureole one centertxt">
+            <div className="aura" />
+            <h1 className="mt0 mb0 pablopvsky centertxt z-10">Pablopvsky</h1>
             <li>
-              <Link href="/" locale="es">
+              <Link href="/" locale="es-co">
                 <a onClick={() => setIsOpen(!isOpen)}>🇨🇴 ES</a>
               </Link>
             </li>
             <li>
-              <Link href="/" locale="en">
+              <Link href="/" locale="en-us">
                 <a onClick={() => setIsOpen(!isOpen)}>🇺🇸 EN</a>
               </Link>
+            </li>
+            <li>
+              me@pablopvsky.com
             </li>
           </ul>
         </div>
       )}
       <div className="anchor">
-        <h1 className="mt0 mb0 pablopvsky centertxt">Pablopvsky</h1>
+        <h1 className="mt0 mb0 pablopvsky centertxt z-10">Pablopvsky</h1>
       </div>
     </header>
   );

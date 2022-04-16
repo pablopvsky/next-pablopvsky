@@ -1,0 +1,47 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "introduction",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Expedite efficient communities",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Incididunt qui ad laboris. Aliquip eiusmod ex do velit non cupidatat.",
+          "spans": []
+        }
+      ]
+    }
+  },
+  {
+    "variation": "blue",
+    "name": "Blue",
+    "slice_type": "introduction",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "E-enable scalable initiatives",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Aute occaecat sint ipsum in est quis amet. Consequat eiusmod laborum exercitation. Quis anim dolore elit incididunt enim dolore id enim voluptate commodo elit qui.",
+          "spans": []
+        }
+      ],
+      "color": "blue"
+    }
+  }
+]

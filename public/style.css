@@ -48,6 +48,7 @@
   --aura-link-color: var(--aura-fg);
   --aura-opacity: 0.5;
   --aura-selector: #cd9ffb;
+  --aura-loader: #cd9ffb;
 }
 
 body {
@@ -125,4 +126,8 @@ h6 {
 
 .first-full-width > span:nth-child(1) {
   display: block;
+}
+
+.headline h2, .headline h3 {
+  color: var(--aura-blue);
 }

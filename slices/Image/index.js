@@ -1,0 +1,20 @@
+import React from "react";
+import NextImage from "next/image";
+import Section from "aura-design/section";
+
+const Image = ({ slice }) => (
+  <Section subClassName="bg" space="p0">
+    <div className="halo">
+      <div className="container floating">
+        <NextImage
+          src={slice.primary.image.url}
+          alt={slice.primary.image.alt}
+          width={slice.primary.image.dimensions.width}
+          height={slice.primary.image.dimensions.height}
+        />
+      </div>
+    </div>
+  </Section>
+);
+
+export default Image;

@@ -1,0 +1,35 @@
+{
+  "id": "screenshot_gallery",
+  "type": "SharedSlice",
+  "name": "ScreenshotGallery",
+  "description": "ScreenshotGallery",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ScreenshotGallery",
+      "primary": {},
+      "items": {
+        "screenshot": {
+          "type": "Link",
+          "config": {
+            "label": "Screenshot",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

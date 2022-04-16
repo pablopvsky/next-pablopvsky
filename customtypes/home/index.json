@@ -12,6 +12,15 @@
           "choices": {
             "hero_banner": {
               "type": "SharedSlice"
+            },
+            "introduction": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "screenshot_gallery": {
+              "type": "SharedSlice"
             }
           }
         }
