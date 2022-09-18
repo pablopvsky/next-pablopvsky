@@ -2,7 +2,8 @@ import React from "react";
 import { PrismicRichText } from "@prismicio/react";
 import Section from "aura-design/section";
 import Grid from "aura-design/grid";
-import Image from "next/image";
+
+import Image from "@components/Image";
 
 const HeroBanner = ({ slice }) => (
   <Section space="p0" container="smesh">

@@ -1,6 +1,7 @@
 import React from "react";
-import NextImage from "next/image";
 import Section from "aura-design/section";
+
+import NextImage from "@components/Image";
 
 const Image = ({ slice }) => (
   <Section subClassName="bg" space="p0">

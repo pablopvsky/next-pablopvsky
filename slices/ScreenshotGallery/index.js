@@ -1,6 +1,6 @@
 import React from "react";
 import { PrismicRichText } from "@prismicio/react";
-import Image from "next/image"
+import Image from "@components/Image"
 import Section from "aura-design/section";
 import Grid from "aura-design/grid";
 
@@ -9,7 +9,6 @@ const ScreenshotGallery = ({ slice }) => (
     <div className="smush">
       <Grid col="two">
         {slice.items.map((item) => {
-          console.log(item.link.url)
           return (
             <div className="mod zoom">
               <a
