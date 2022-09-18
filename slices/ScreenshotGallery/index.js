@@ -8,9 +8,9 @@ const ScreenshotGallery = ({ slice }) => (
   <Section subClassName="bg">
     <div className="smush">
       <Grid col="two">
-        {slice.items.map((item) => {
+        {slice.items.map((item, index) => {
           return (
-            <div className="mod zoom">
+            <div className="mod zoom" key={index}>
               <a
                 target="_blank"
                 rel="noopener"

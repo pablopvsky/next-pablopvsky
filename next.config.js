@@ -1,5 +1,4 @@
-module.exports = {
-  target: "serverless",
+const nextConfig = {
   i18n: {
     locales: ["en-us", "es-co"],
     defaultLocale: "es-co",
@@ -10,4 +9,6 @@ module.exports = {
     path: "",
     deviceSizes: [320, 420, 768, 1024, 1200],
   },
-};
+}
+
+module.exports = nextConfig
