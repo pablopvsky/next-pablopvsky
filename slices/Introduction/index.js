@@ -4,7 +4,7 @@ import Section from "aura-design/section";
 
 const Introduction = ({ slice }) => {
   const isVariation = slice.variation != "default";
-  const subClassNameConnect = ["centertxt", !isVariation && "bg"];
+  const subClassNameConnect = ["centertxt", !isVariation && "bg", ["blue"].includes(slice.primary.color) && "black-text"];
 
   return (
     <Section
