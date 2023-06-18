@@ -4,22 +4,21 @@ import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import Section from "@aura-design/system/section";
 
-export type IntroductionProps = SliceComponentProps<Content.IntroductionProps>;
+export type IntroductionProps = SliceComponentProps<Content.IntroductionSlice>;
 
 const Introduction = ({ slice }: IntroductionProps) => {
   const isVariation = slice.variation != "default";
-  const subClassNameConnect = [
-    "centertxt",
-    !isVariation && "bg",
-    ["blue"].includes(slice.primary.color) && "black-text",
-  ];
+  const subClassNameConnect = ["centertxt", !isVariation && "bg"];
+
+  if (slice.variation === "blue") {
+    subClassNameConnect.push("black-text blue");
+  }
 
   return (
     <Section
       subClassName={subClassNameConnect.join(" ").trim()}
       space="p0"
       container="smesh"
-      color={slice.primary.color}
     >
       <div>
         <div className="smash pad">

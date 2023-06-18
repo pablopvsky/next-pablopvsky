@@ -3,6 +3,7 @@
   "label": "home",
   "repeatable": false,
   "status": true,
+  "format": "custom",
   "json": {
     "Main": {
       "slices": {
@@ -10,18 +11,10 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "hero_banner": {
-              "type": "SharedSlice"
-            },
-            "introduction": {
-              "type": "SharedSlice"
-            },
-            "image": {
-              "type": "SharedSlice"
-            },
-            "screenshot_gallery": {
-              "type": "SharedSlice"
-            }
+            "screenshot_gallery": { "type": "SharedSlice" },
+            "image": { "type": "SharedSlice" },
+            "introduction": { "type": "SharedSlice" },
+            "hero_banner": { "type": "SharedSlice" }
           }
         }
       }

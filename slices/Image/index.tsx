@@ -4,7 +4,7 @@ import { PrismicNextImage } from "@prismicio/next";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 
-export type ImageProps = SliceComponentProps<Content.ImageProps>;
+export type ImageProps = SliceComponentProps<Content.ImageSlice>;
 
 const Image = ({ slice }: ImageProps) => (
   <Section subClassName="bg" space="p0">

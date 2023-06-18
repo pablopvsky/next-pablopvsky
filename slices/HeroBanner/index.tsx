@@ -10,7 +10,7 @@ import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 /**
  * Props for `Banner`.
  */
-export type HeroBannerProps = SliceComponentProps<Content.HeroBannerProps>;
+export type HeroBannerProps = SliceComponentProps<Content.HeroBannerSlice>;
 
 const HeroBanner = ({ slice }: HeroBannerProps) => (
   <Section space="p0" container="smesh">

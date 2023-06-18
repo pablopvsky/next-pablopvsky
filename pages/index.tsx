@@ -1,28 +1,45 @@
+import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import { SliceZone } from "@prismicio/react";
 import { createClient } from "@/prismicio";
+import * as prismic from "@prismicio/client";
 
 import { components } from "@/slices";
 import Layout from "@/components/Layout";
 
 type HomeProps = {
-  locale: string
-  document: any
+  locale: string;
+  doc: prismic.Content.HomeDocument;
 };
 
-const Home = ({ locale, document }: HomeProps) => {
+const Home = ({ locale, doc }: HomeProps) => {
   return (
     <Layout locale={locale}>
-      <SliceZone slices={document.data.slices} components={components} />
+      <SliceZone slices={doc.data.slices} components={components} />
     </Layout>
   );
 };
 
-export const getStaticProps = async ({ previewData, locale }) => {
+export async function getStaticProps({
+  previewData,
+  locale,
+}: GetStaticPropsContext): Promise<GetStaticPropsResult<HomeProps>> {
   const client = createClient({ previewData });
-  const document = await client.getSingle("home", { lang: locale });
-  return {
-    props: { document, locale },
-  };
-};
+
+  try {
+    //Querying all data
+    const home = await client.getSingle("home", { lang: locale });
+
+    return {
+      props: {
+        locale: locale ?? "es-co",
+        doc: home,
+      }, // will be passed to the page component as props
+    };
+  } catch (error) {
+    return {
+      notFound: true,
+    };
+  }
+}
 
 export default Home;
