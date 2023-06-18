@@ -13,11 +13,11 @@
       "primary": {},
       "items": {
         "screenshot": {
-          "type": "Link",
+          "type": "Image",
           "config": {
             "label": "Screenshot",
-            "placeholder": "",
-            "select": null
+            "constraint": {},
+            "thumbnails": []
           }
         },
         "link": {

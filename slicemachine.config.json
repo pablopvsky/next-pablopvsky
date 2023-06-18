@@ -1,0 +1,7 @@
+{
+  "apiEndpoint": "https://pablopvsky.prismic.io/api/v2",
+  "repositoryName": "pablopvsky",
+  "adapter": "@slicemachine/adapter-next",
+  "libraries": ["./slices"],
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
+}

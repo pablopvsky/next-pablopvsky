@@ -1,0 +1,34 @@
+[
+  {
+    "title": {
+      "__TYPE__": "StructuredTextContent",
+      "value": [
+        {
+          "type": "heading1",
+          "content": {
+            "text": "Climate"
+          }
+        }
+      ]
+    },
+    "uid": {
+      "__TYPE__": "UIDContent",
+      "value": "example"
+    },
+    "excerpt": {
+      "__TYPE__": "StructuredTextContent",
+      "value": [
+        {
+          "type": "paragraph",
+          "content": {
+            "text": "Deserunt ut voluptate adipisicing elit excepteur."
+          }
+        }
+      ]
+    },
+    "body": {
+      "__TYPE__": "SliceContentType",
+      "value": []
+    }
+  }
+]

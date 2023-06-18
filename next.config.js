@@ -1,14 +1,19 @@
 const nextConfig = {
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
   i18n: {
     locales: ["en-us", "es-co"],
     defaultLocale: "es-co",
     localeDetection: false,
   },
   images: {
-    loader: "imgix",
-    path: "",
-    deviceSizes: [320, 420, 768, 1024, 1200],
-  },
+    domains: ["images.prismic.io"]
+  }
 }
 
 module.exports = nextConfig

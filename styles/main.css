@@ -1,0 +1,81 @@
+*:root {
+  --aura-bg: #000;
+  --aura-text-primary: #f6f4fe;
+  --aura-accents-primary: #fff;
+  --aura-blue: #4bbdcc;
+  --aura-link-hover: #222;
+  --aura-loader: var(--aura-tropical-indigo);
+  --aura-module: #000;
+  --aura-selector: #cd9ffb;
+  --aura-loader: #cd9ffb;
+  --aura-purple: #974493
+}
+
+@font-face {
+  font-family: "iAWriterMonoS";
+  src: url("/fonts/iAWriterMonoS-Regular.woff2") format("woff2"),
+    url("/fonts/iAWriterMonoS-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pablopvsky";
+  src: url("/fonts/Pablopvsky-Regular.woff2") format("woff2"),
+    url("/fonts/Pablopvsky-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+
+img:not(.default) {
+  max-width: 100%;
+  height: auto;
+}
+
+.pablopvsky,
+.header h1 {
+  font-family: "pablopvsky";
+}
+
+.iAWriterMonoS {
+  font-family: "iAWriterMonoS";
+}
+
+.figure-down {
+  margin-top: 65px;
+  margin-bottom: -8vh;
+}
+
+.blue-text {
+  color: var(--aura-blue);
+}
+
+.purple-text {
+  color: var(--aura-purple) !important;
+}
+
+.bg {
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(https://images.prismic.io/pablopvsky/fb63bde5-3e0b-46af-af0e-42cb8512394a_4b26254f-b757-41e0-a6a3-a40c22d99b38_background-circle-figure.jpeg?auto=compress,format);
+}
+
+.first-full-width > span:nth-child(1) {
+  display: block;
+}
+
+.headline h2,
+.headline h3 {
+  color: var(--aura-blue);
+}
