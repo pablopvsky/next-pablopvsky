@@ -1,6 +1,5 @@
-import { useRouter } from "next/router";
 import { SliceZone } from "@prismicio/react";
-import { createClient, Content } from "@/prismicio";
+import { createClient } from "@/prismicio";
 
 import { components } from "@/slices";
 import Layout from "@/components/Layout";
