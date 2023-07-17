@@ -22,6 +22,9 @@ dependencies:
   nprogress:
     specifier: ^0.2.0
     version: 0.2.0
+  phantom-client:
+    specifier: ^0.0.4
+    version: 0.0.4
   react:
     specifier: ^18.0.0
     version: 18.2.0
@@ -3356,6 +3359,10 @@ packages:
       reusify: 1.0.4
     dev: true
 
+  /fauna@0.9.2:
+    resolution: {integrity: sha512-kAgCn/N7HQSXzm34raKG6SBE2rC0K6W9sTCGNP8mVimKvvJLupSmYON5A69eo/dEcrlPYLMiaVhjMo/oQN3YQQ==}
+    dev: false
+
   /fd-slicer@1.1.0:
     resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
     dependencies:
@@ -5033,6 +5040,13 @@ packages:
   /pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
     dev: true
+
+  /phantom-client@0.0.4:
+    resolution: {integrity: sha512-WVLjGUkB3zpX/kdvuz6L9WvFUk6EEw2KjLFO85kCHnDCTXiLX+Iclr/og5SNkEAzJ8Ij1jpItNgWJHLUt+gz8g==}
+    dependencies:
+      fauna: 0.9.2
+      typescript: 4.9.5
+    dev: false
 
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}

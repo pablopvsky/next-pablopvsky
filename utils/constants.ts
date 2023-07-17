@@ -1,11 +1,5 @@
 export const FAV_ICON =
-  "https://images.prismic.io/garitma%2F7bcfd3a3-4da2-4b73-9402-612e7b20ce1c_favicon-pwa.png?auto=compress,format";
-export const API_LOCALE = "es-co";
-export const DATE_FORMAT = {
-  year: "numeric",
-  month: "long",
-  day: "2-digit",
-};
+  "https://images.prismic.io/pablopvsky/513b7765-bb79-43ee-b9f3-f096784557f4_d9fef7cd-2b03-46d4-a687-c8619b328a6c_logo-p-circle.png?auto=compress,format";
 export const SITE_NAME = "Pablopvsky";
 export const SITE_URL = "https://pablopvsky.com";
 export const SOCIAL = {
@@ -16,6 +10,4 @@ export const SOCIAL = {
 };
 export const SITE_DESCRIPTIO =
   "Pablo Orozco Montes, Publicista, Escritor, Artista, Programador. El mundo no es tan teso, Una breve descripción de mi persona es el compromiso con el bienestar.";
-export const API_URL_KIT = "https://garitma.cdn.prismic.io/api/v2";
-export const GRAPHQL_API_URL = "https://garitma.prismic.io/graphql";
 export const PRISMIC_API_TOKEN = process.env.PRISMIC_API_TOKEN;
