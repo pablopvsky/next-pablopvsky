@@ -14,7 +14,7 @@ export const contentType = "image/png";
 
 // Font
 const fontPablopvsky = fetch(
-  new URL("../public/fonts/Pablopvsky-Regular.woff", import.meta.url)
+  new URL("http://localhost:3000/fonts/Pablopvsky-Regular.woff")
 ).then((res) => res.arrayBuffer());
 
 export default async function Image() {
