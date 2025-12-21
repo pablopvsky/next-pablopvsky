@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import { cn } from "@/utils/class-names";
 import { Section } from "@/components/ui/Section";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Pablopvsky - Advertiser & Head of Operations",
@@ -28,6 +30,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="font-pablopvsky">
+      <Header />
       <Section
         container="smosh"
         className={cn(
@@ -38,8 +41,7 @@ export default function Home() {
         )}
       >
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[var(--gray-1)] [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] dark:bg-[var(--gray-1)]"></div>
-        <div className="relative z-10">
-          <h1>Pablopvsky</h1>
+        <div className="relative z-10 pt-5">
           <p>
             I'm a professional Advertiser and the Head of Operations at{" "}
             <a
@@ -62,6 +64,7 @@ export default function Home() {
           height={1000}
         />
       </Section>
+      <Footer />
     </div>
   );
 }
