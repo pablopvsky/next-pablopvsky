@@ -3,7 +3,7 @@ import { Section } from "./ui/Section";
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 p-1">
       <div  className="flex justify-between smosh">
         <Link href="/" className="text-xl font-bold font-pablopvsky">
           Pablopvsky
