@@ -18,12 +18,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://pablopvsky.com", // You should update this with your actual domain
     siteName: "Pablopvsky",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Pablopvsky",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pablopvsky - Advertiser & Head of Operations",
     description:
       "Professional Advertiser and Head of Operations at Somos Gente Digital. Expert in operational efficiency and process optimization.",
+    images: ["/opengraph-image"],
   },
 };
 
