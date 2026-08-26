@@ -52,7 +52,7 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[var(--gray-1)] [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] dark:bg-[var(--gray-1)]"></div>
         <div className="relative z-10 pt-5">
           <p>
-            I'm a professional Advertiser and the Head of Operations at{" "}
+            I&apos;m a professional Advertiser and the Head of Operations at{" "}
             <a
               href="https://somosgentedigital.com"
               target="_blank"
@@ -61,8 +61,8 @@ export default function Home() {
             >
               Somos Gente Digital
             </a>
-            . I've been working in the industry for over 10 years. My work is
-            defined by a relentless pursuit of operational efficiency and
+            . I&apos;ve been working in the industry for over 10 years. My work
+            is defined by a relentless pursuit of operational efficiency and
             process optimization.
           </p>
         </div>
