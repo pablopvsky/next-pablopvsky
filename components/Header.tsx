@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Section } from "./ui/Section";
 
 export const Header = () => {
   return (
