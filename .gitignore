@@ -129,3 +129,6 @@ out/
 .env.local
 .env.build
 .vercel
+.sonar-token
+sonar-issues.json
+.scannerwork/

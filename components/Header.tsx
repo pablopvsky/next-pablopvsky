@@ -2,21 +2,14 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 p-1">
-      <div  className="flex justify-between smosh">
-        <Link href="/" className="text-xl font-bold font-pablopvsky">
-          Pablopvsky
-        </Link>
-        <a
-          href="https://x.com/pablopvsky"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm font-medium hover:text-accent-9 transition-colors"
-        >
-          Follow me on X
-        </a>
-      </div>
+    <header className="letter-line letter-line-0 border-b border-gray-6 pb-3">
+      <p className="text-sm tracking-wide text-gray-11">A letter from</p>
+      <Link href="/" className="mt-0.5 inline-block">
+        <h1 className="font-pablopvsky text-accent-12">Pablopvsky</h1>
+      </Link>
+      <p className="mt-1 text-sm text-gray-11">
+        Advertiser · Head of Operations
+      </p>
     </header>
   );
 };
-

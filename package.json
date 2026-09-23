@@ -6,23 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ai:image": "node .cursor/skills/generate-brand-images/generate-images.mjs",
+    "preflight": "tsx scripts/preflight.ts",
+    "dev:server": "next dev",
+    "sonar:up": "docker start sonarqube 2>/dev/null || docker run -d --name sonarqube -p 9000:9000 sonarqube:lts",
+    "sonar:setup": "sleep 45 && curl -fsS -u admin:admin -X POST \"http://localhost:9000/api/users/change_password?login=admin&previousPassword=admin&password=$npm_package_name\" && curl -fsS -u admin:$npm_package_name -X POST \"http://localhost:9000/api/user_tokens/generate?name=local-token\" | jq -r .token > .sonar-token",
+    "sonar:scan": "sonar-scanner -Dsonar.login=$(cat .sonar-token) -Dsonar.projectKey=$npm_package_name -Dsonar.host.url=http://localhost:9000",
+    "sonar:report": "curl -u admin:$npm_package_name \"http://localhost:9000/api/issues/search?componentKeys=$npm_package_name&resolved=false\" | jq '[.issues[] | {message: .message, severity: .severity, component: .component, line: .line}]' > sonar-issues.json",
+    "sonar:full": "pnpm run sonar:up && pnpm run sonar:setup && pnpm run sonar:scan"
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "next": "16.3.3",
+    "next": "16.3.6",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
+    "@shadcn/lint": "^0.2.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^20.19.43",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
     "eslint": "^9.39.5",
-    "eslint-config-next": "16.3.3",
+    "eslint-config-next": "16.3.6",
     "tailwindcss": "^4.3.3",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "sonarqube-scanner": "^4.3.5",
+    "tsx": "^4.19.1"
   }
 }

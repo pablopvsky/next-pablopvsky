@@ -201,4 +201,99 @@
 }
 
 @layer components {
+  .letter-scene {
+    background-color: var(--gray-1);
+    background-image:
+      radial-gradient(
+        ellipse 80% 60% at 50% 0%,
+        var(--accent-a2),
+        transparent 70%
+      ),
+      linear-gradient(
+        160deg,
+        var(--gray-1) 0%,
+        var(--accent-1) 45%,
+        var(--gray-2) 100%
+      );
+  }
+
+  .letter-sheet {
+    box-shadow:
+      0 1px 0 var(--gray-a3),
+      0 calc(var(--spacing) * 1) calc(var(--spacing) * 3) var(--gray-a4);
+    animation: letter-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .letter-line {
+    animation: letter-fade 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .letter-line-0 {
+    animation-delay: 0.05s;
+  }
+  .letter-line-1 {
+    animation-delay: 0.18s;
+  }
+  .letter-line-2 {
+    animation-delay: 0.3s;
+  }
+  .letter-line-3 {
+    animation-delay: 0.42s;
+  }
+  .letter-line-4 {
+    animation-delay: 0.54s;
+  }
+  .letter-line-5 {
+    animation-delay: 0.66s;
+  }
+  .letter-line-6 {
+    animation-delay: 0.78s;
+  }
+
+  .letter-link {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition:
+      background-size 0.35s ease,
+      color 0.2s ease;
+  }
+
+  .letter-link:hover {
+    background-size: 100% 1px;
+  }
+
+  @keyframes letter-rise {
+    from {
+      opacity: 0;
+      transform: translateY(calc(var(--spacing) * 2));
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes letter-fade {
+    from {
+      opacity: 0;
+      transform: translateY(calc(var(--spacing) * 0.5));
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .letter-sheet,
+    .letter-line {
+      animation: none;
+    }
+
+    .letter-link {
+      transition: none;
+    }
+  }
 }
