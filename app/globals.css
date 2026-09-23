@@ -254,13 +254,19 @@
     }
 
     .letter-body {
-      line-height: 1.3;
+      line-height: 1.25;
+    }
+
+    .letter-body p {
+      --min: 0.94rem;
+      --val: 3.6vw;
+      --max: 1rem;
     }
 
     .letter-brand {
-      --min: 1.58665rem;
-      --val: 8vw;
-      --max: 2.441rem;
+      --min: 1.482rem;
+      --val: 7vw;
+      --max: 2.28rem;
     }
   }
 
