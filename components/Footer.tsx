@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <footer className="letter-line letter-line-6 mt-5 flex flex-col gap-1 border-t border-gray-6 pt-3 sm:flex-row sm:items-center sm:justify-between">
-      <span className="text-sm text-gray-11">
+    <footer className="letter-line letter-line-6 mt-1.5 flex flex-row flex-wrap items-center justify-between gap-x-1.5 gap-y-0.5 border-t border-gray-6 pt-1 md:mt-5 md:gap-1 md:pt-3">
+      <span className="letter-meta text-sm text-gray-11">
         Pablo O. (
         <a
           href="https://x.com/pablopvsky"
@@ -13,7 +13,7 @@ export const Footer = () => {
         </a>
         )
       </span>
-      <div className="flex gap-2 text-sm">
+      <div className="flex gap-1.5 text-sm md:gap-2">
         <a
           href="https://x.com/pablopvsky"
           target="_blank"

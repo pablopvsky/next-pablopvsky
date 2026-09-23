@@ -39,13 +39,13 @@ export default function Home() {
     <main className="letter-scene font-pablopvsky text-gray-12">
       <Section
         container="smosh"
-        className="relative flex min-h-dvh items-center justify-center"
+        className="letter-section relative flex min-h-dvh items-center justify-center"
         subClassName="w-full"
       >
-        <article className="letter-sheet mx-auto w-full max-w-2xl bg-gray-2 px-3 py-4 md:px-5 md:py-6">
+        <article className="letter-sheet mx-auto w-full max-w-2xl bg-gray-2 px-2 py-2 md:px-5 md:py-6">
           <Header />
 
-          <div className="letter-body mt-4 space-y-2">
+          <div className="letter-body mt-1.5 space-y-0.5 md:mt-4 md:space-y-2">
             <p className="letter-line letter-line-1 text-gray-11">Hello,</p>
             <p className="letter-line letter-line-2">
               I&apos;m a professional Advertiser and the Head of Operations at{" "}
@@ -65,10 +65,10 @@ export default function Home() {
               This page is a short letter from me — no pitch deck, just a place
               to say hello and point you toward where I write and ship.
             </p>
-            <p className="letter-line letter-line-4 mt-3 text-gray-11">
+            <p className="letter-line letter-line-4 mt-1 text-gray-11 md:mt-3">
               With care,
             </p>
-            <p className="letter-line letter-line-5 mt-1 font-pablopvsky text-accent-12">
+            <p className="letter-line letter-line-5 mt-0.5 font-pablopvsky text-accent-12 md:mt-1">
               Pablo O.
             </p>
           </div>
