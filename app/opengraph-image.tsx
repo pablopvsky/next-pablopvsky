@@ -21,7 +21,7 @@ export default async function Image() {
     (
       <div
         style={{
-          background: "#ecebea", // gray-1
+          background: "#191515", // gray-1
           width: "100%",
           height: "100%",
           display: "flex",
@@ -44,7 +44,7 @@ export default async function Image() {
           <h1
             style={{
               fontSize: 120,
-              color: "#21201c", // gray-12
+              color: "#f3ecec", // gray-12
               margin: 0,
               lineHeight: 1,
             }}
@@ -54,7 +54,7 @@ export default async function Image() {
           <p
             style={{
               fontSize: 48,
-              color: "#0000b3", // accent-9
+              color: "#f84657", // accent-9
               marginTop: 30,
               lineHeight: 1.4,
               maxWidth: 900,
