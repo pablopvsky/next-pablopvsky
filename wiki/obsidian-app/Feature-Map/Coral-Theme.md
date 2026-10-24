@@ -4,7 +4,7 @@ status: shipped
 area: tokens
 routes: [/]
 components: [app/globals.css, app/opengraph-image.tsx]
-pr:
+pr: https://github.com/pablopvsky/next-pablopvsky/pull/12
 updated: 2026-10-24
 ---
 

@@ -4,7 +4,7 @@ status: shipped
 area: agents
 routes: []
 components: [AGENTS.md, .cursor/rules/aura-agent-surface.mdc, .cursor/skills/aura-constraints/SKILL.md, .cursor/skills/poteto-mode/SKILL.md]
-pr:
+pr: https://github.com/pablopvsky/next-pablopvsky/pull/12
 updated: 2026-10-24
 ---
 
