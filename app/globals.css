@@ -87,69 +87,69 @@
 }
 
 :root {
-  /* Accent color scale */
-  --accent-1: #e9ecf1;
-  --accent-2: #dee7f7;
-  --accent-3: #cedeff;
-  --accent-4: #bad5ff;
-  --accent-5: #a8caff;
-  --accent-6: #92baff;
-  --accent-7: #75a5ff;
-  --accent-8: #4f88ff;
-  --accent-9: #0000b3;
-  --accent-10: #012bca;
-  --accent-11: #002cff;
-  --accent-12: #0200ab;
+  /* Coral preset only. Seeds: accent #f84657, gray #8c7375, background #1a131b.
+     Dark appearance from Aura's mixer. Light appearance against this background collapses to black. */
+  --accent-1: #1c1313;
+  --accent-2: #221514;
+  --accent-3: #3e1114;
+  --accent-4: #540b14;
+  --accent-5: #64111b;
+  --accent-6: #761f26;
+  --accent-7: #902e35;
+  --accent-8: #bb3e46;
+  --accent-9: #f84657;
+  --accent-10: #e9364b;
+  --accent-11: #ff8e90;
+  --accent-12: #ffd0cf;
 
-  --accent-a1: #d9e6ff4d;
-  --accent-a2: #d2e2ff99;
-  --accent-a3: #cedeff;
-  --accent-a4: #bad5ff;
-  --accent-a5: #a8caff;
-  --accent-a6: #92baff;
-  --accent-a7: #75a5ff;
-  --accent-a8: #4f88ff;
-  --accent-a9: #0000b3;
-  --accent-a10: #002acafe;
-  --accent-a11: #002cff;
-  --accent-a12: #0200ab;
+  --accent-a1: #c4130003;
+  --accent-a2: #fd4c0009;
+  --accent-a3: #fa070029;
+  --accent-a4: #fe000041;
+  --accent-a5: #fd0d1b53;
+  --accent-a6: #fe313767;
+  --accent-a7: #fe484e84;
+  --accent-a8: #fe5058b4;
+  --accent-a9: #fe4758f8;
+  --accent-a10: #ff3950e7;
+  --accent-a11: #ff8e90;
+  --accent-a12: #ffd0cf;
 
   --accent-contrast: #fff;
-  --accent-surface: #dae5facc;
-  --accent-indicator: #0000b3;
-  --accent-track: #0000b3;
+  --accent-surface: #2a170e80;
+  --accent-indicator: #f84657;
+  --accent-track: #f84657;
 
-  /* Gray color scale */
-  --gray-1: #ecebea;
-  --gray-2: #e7e6e4;
-  --gray-3: #dddcd8;
-  --gray-4: #d5d4ce;
-  --gray-5: #cdcbc5;
-  --gray-6: #c4c2bc;
-  --gray-7: #b8b7b1;
-  --gray-8: #a4a39d;
-  --gray-9: #767570;
-  --gray-10: #6c6b65;
-  --gray-11: #4f4e49;
-  --gray-12: #21201c;
+  --gray-1: #191515;
+  --gray-2: #201c1c;
+  --gray-3: #292324;
+  --gray-4: #30292a;
+  --gray-5: #382f30;
+  --gray-6: #433738;
+  --gray-7: #534445;
+  --gray-8: #6f5a5c;
+  --gray-9: #7f6668;
+  --gray-10: #8d7476;
+  --gray-11: #c4adaf;
+  --gray-12: #f3ecec;
 
-  --gray-a1: #2524b905;
-  --gray-a2: #0b0a390a;
-  --gray-a3: #0a090515;
-  --gray-a4: #19180320;
-  --gray-a5: #1c15052a;
-  --gray-a6: #140e0033;
-  --gray-a7: #0e0d013f;
-  --gray-a8: #0c0b0155;
-  --gray-a9: #08070086;
-  --gray-a10: #09090192;
-  --gray-a11: #070600b0;
-  --gray-a12: #060500e1;
+  --gray-a1: #00bd0003;
+  --gray-a2: #b3f9350a;
+  --gray-a3: #eff69b12;
+  --gray-a4: #fbf4b519;
+  --gray-a5: #fbe5b922;
+  --gray-a6: #fedabc2e;
+  --gray-a7: #fed7c340;
+  --gray-a8: #ffd2ca5f;
+  --gray-a9: #fecec971;
+  --gray-a10: #fed3cf81;
+  --gray-a11: #fee2e2be;
+  --gray-a12: #fff8f8f2;
 
   --gray-contrast: #ffffff;
-  --gray-surface: #ffffffcc;
-  --gray-indicator: #767570;
-  --gray-track: #767570;
+  --gray-surface: rgba(0, 0, 0, 0.05);
+  --gray-indicator: #7f6668;
+  --gray-track: #7f6668;
 
   --primary: var(--accent-9);
   --primary-foreground: var(--accent-contrast);

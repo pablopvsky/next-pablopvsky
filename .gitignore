@@ -69,6 +69,7 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -129,6 +130,3 @@ out/
 .env.local
 .env.build
 .vercel
-.sonar-token
-sonar-issues.json
-.scannerwork/

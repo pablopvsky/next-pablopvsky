@@ -14,10 +14,11 @@ Personal site for **Pablopvsky** (Pablo O.). The primary surface is a **typograp
 
 ## Palette
 
-- Canvas: Aura `gray-1` / `gray-2` (warm stone paper)
+- Schema: Aura Coral only. Seeds are accent `#f84657`, gray `#8c7375`, background `#1a131b`. No preset switcher.
+- Canvas: Aura `gray-1` / `gray-2` (dark warm steps from that gray seed)
 - Ink: Aura `gray-12` / `accent-12`
-- Accent marks: Aura `accent-9` (`#0000b3`) for links and emphasis only
-- Avoid neon glow, purple SaaS gradients, and high-saturation fills
+- Accent marks: Aura `accent-9` (`#f84657`) for links and emphasis only
+- Avoid neon glow, purple SaaS gradients, and a second accent
 
 ## Composition / motifs
 

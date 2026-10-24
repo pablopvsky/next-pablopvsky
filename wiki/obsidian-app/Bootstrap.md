@@ -1,22 +1,7 @@
-# AI bootstrap: Obsidian documentation (my-app)
+# AI bootstrap: feature map (pablopvsky.com)
 
-You are helping maintain internal documentation for this repository.
+The only project documentation to update is `wiki/obsidian-app/Feature-Map/`. One short note per feature, inside the PR that changes it.
 
-## Scope
+This site has no `app/api` routes and no Bruno collection. It is not Famity Care: no WorkOS and no medicine ABAC.
 
-- Vault root: `wiki/obsidian-app` (relative to repo root).
-- API catalog: Bruno collection `wiki/bruno-app` — mirror `app/api/**` route handlers.
-
-## Rules
-
-1. Prefer short, linked notes over long monoliths. Use Obsidian `[[wikilinks]]` between related pages.
-2. When describing behavior that touches HTTP APIs, verify against `app/api/` source and align Bruno request names, methods, and example payloads.
-3. Document **decisions** (why), **procedures** (how to run), and **troubleshooting** (common failures). Link to code paths with fenced file paths, e.g. `` `app/api/...` ``.
-4. Do not invent endpoints or env vars; if unknown, state what is missing and which file to inspect.
-5. Keep secrets out of markdown; reference env var **names** only.
-
-## Outputs
-
-- New notes under sensible folders (see [[Welcome]]).
-- Updates to existing notes when behavior changes.
-- Optional: short changelog section at the bottom of a note when making substantive edits.
+Keep secrets out of notes. Name environment variables only (`GOOGLE_API_KEY` for `pnpm ai:image`).
