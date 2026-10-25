@@ -4,7 +4,7 @@ status: shipped
 area: homepage
 routes: [/]
 components: [app/page.tsx, components/Header.tsx, components/Footer.tsx, components/ui/Section.tsx, app/globals.css]
-pr: https://github.com/pablopvsky/next-pablopvsky/pull/12
+pr: https://github.com/pablopvsky/next-pablopvsky/pull/14
 updated: 2026-10-25
 ---
 
